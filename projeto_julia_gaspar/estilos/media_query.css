@@ -590,9 +590,10 @@
         border-radius: 10px;
         background-color: var(--cor6);
         border: none;
+        cursor: pointer;
     }
     
-    button > a {
+    a > button {
         text-decoration: none;
         text-align: center;
         color: var(--cor7);
@@ -600,6 +601,7 @@
         font-weight: 600;
         font-size: 2vw; /*14px;*/
         line-height: 17.64px;
+        cursor: pointer;
     }
     
     h2 {
@@ -975,6 +977,11 @@
         padding: 0vh 0vw 0vh 1vw;
     }
 
+    .menu-item:hover {
+        color: rgba(255, 255, 255, 0.690);
+        transition: color 0.2s ease-out;
+    }
+
     h1 {
         margin: 0px 0px 0px -310px;
         padding: 10vh 0px 10px 50px;
@@ -1037,8 +1044,8 @@
     .botao {
         display: flex;
         justify-content: center;
-        margin-left: -77vw;
-        margin-top: 25vh;
+        margin-left: -79vw;
+        margin-top: 10vh;
     }
 
     .agendeconsulta1 {
@@ -1050,7 +1057,7 @@
         border: none;
     }
 
-    button > a {
+    a > button {
         text-decoration: none;
         text-align: center;
         color: var(--cor7);
@@ -1058,6 +1065,15 @@
         font-weight: 600;
         font-size: 1.5vw; /*14px;*/
         line-height: 17.64px;
+        cursor: pointer;
+    }
+
+    .agendeconsulta1:hover {
+        background-color: var(--cor2);
+    }
+
+    .agendeconsulta2:hover {
+        background-color: var(--cor2);
     }
     
     h2 {
@@ -1645,6 +1661,11 @@
 
     #menu-mobile {
         display: none;
+    }
+
+    .botao {
+        margin-top: 25vh;
+        margin-left: -76.5vw;
     }
 
 

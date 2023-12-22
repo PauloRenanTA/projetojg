@@ -58,15 +58,17 @@ button {
     border-radius: 20px;
     background-color: var(--cor6);
     border: none;
+    cursor: pointer;
 }
 
-button > a {
+a > button {
     text-decoration: none;
     color: var(--cor7);
     font-family: var(--fonte1);
     font-weight: 600;
     font-size: 3.5vw; /*14px;*/
     line-height: 17.64px;
+    cursor: pointer;
 }
 
 h2 {
