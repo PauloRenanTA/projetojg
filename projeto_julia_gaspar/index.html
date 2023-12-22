@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media_query.css">
+    <link rel="stylesheet" href="estilos/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Dra. Júlia Gaspar</title>
+</head>
+<body>
+    <header>
+        <img id = logo src="imagens/logo.png" alt="logo da empresa">
+        <img id = logo-cut src="imagens/logo_cut.png" alt="logo da empresa">
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <nav id="menu">
+            <a class="menu-item" href="#sessaoprincipal">Home</a>
+            <a class="menu-item" href="#sessaoespecialidades">Procedimentos</a>
+            <a class="menu-item" href="#sessaofeedbacks">Feedbacks</a>
+            <a class="menu-item" href="#sessaofinal">Agendamentos</a>
+        </nav>
+    </header>
+    <nav id="menu-mobile">
+        <a class="menu-mobile-item" href="#sessaoprincipal">Home</a>
+        <a class="menu-mobile-item" href="#sessaoespecialidades">Procedimentos</a>
+        <a class="menu-mobile-item" href="#sessaofeedbacks">Feedbacks</a>
+        <a class="menu-mobile-item" href="#sessaofinal">Agendamentos</a>
+    </nav>
+
+    <main>
+        <section id="sessaoprincipal">
+            <h1>Júlia Gaspar</h1>
+            <div id="prof">
+                <p class="profissao">Médica Otorrinolaringologista e cirurgiã plástica facial.</p>
+            </div>
+            <p class="registro">CRM-SP: 212523 RQE: 119542</p>
+            <div class="botao">    
+                <button class="agendeconsulta1"><a href="https://wa.me/5511945918631" target="_blank">Agende a sua consulta</a></button>
+            </div>
+            <br><br><br><br><br>   
+            <p class="proposito">Meu propósito é ajudar você a ter mais saúde, qualidade de vida e autoestima!</p>
+        </section>
+        <section id="sessaoespecialidades" >
+            <h2 class="subtitulo1">Procedimentos</h2>
+            <p class="postitulo">Conheça os procedimentos e cirurgias que realizo.</p>
+            <div class="slide-mobile">
+                <div class="container">
+                    <img class = imagemespecialidade src="imagens/especialidades1_mobile.png" alt="texto sobre blefaroplastia">
+                    <p class="especialidade">Blefaroplastia</p>
+                    <p class="conceito">Cirurgia das pálpebras que ameniza os sinais da idade, corrige excesso de pele e rugas.</p>
+                    <button class="botao-navegacao botao-anterior" onclick="proxImagem()">❮</button>
+                    <button class="botao-navegacao botao-proximo" onclick="antImagem()">❯</button>
+                </div>
+                <div class="container remova">
+                    <img class = imagemespecialidade src="imagens/especialidades2_mobile.jpg" alt="texto sobre rinoplastia">
+                    <p class="especialidade">Rinoplastia</p>
+                    <p class="conceito">Cirurgia que une o funcional e a estética, proporcionando um nariz mais harmônico e uma melhor respiração.</p>
+                    <button class="botao-navegacao botao-anterior" onclick="proxImagem()">❮</button>
+                    <button class="botao-navegacao botao-proximo" onclick="antImagem()">❯</button>
+                </div>
+                <div class="container remova">
+                    <img class = imagemespecialidade src="imagens/especialidades3_mobile.jpg" alt="texto sobre facelift">
+                    <p class="especialidade">Facelift</p>
+                    <p class="conceito">Conhecido como ritidoplastia, tem como objetivo rejuvenescer, reposicionando estruturas da face.</p>
+                    <button class="botao-navegacao botao-anterior" onclick="proxImagem()">❮</button>
+                    <button class="botao-navegacao botao-proximo" onclick="antImagem()">❯</button>
+                </div>
+                <div class="container remova">
+                    <img class = imagemespecialidade src="imagens/especialidades4_mobile.jpg" alt="texto sobre otoplastia">
+                    <p class="especialidade">Otoplastia</p>
+                    <p class="conceito">Corrige orelhas proeminentes (orelhas de abano) ou também o formato delas.</p>
+                    <button class="botao-navegacao botao-anterior" onclick="proxImagem()">❮</button>
+                    <button class="botao-navegacao botao-proximo" onclick="antImagem()">❯</button>
+                </div>
+                <div class="container remova">
+                    <img class = imagemespecialidade src="imagens/especialidades5_mobile.jpg" alt="texto sobre lobuloplastia">
+                    <p class="especialidade">Lobuloplastia</p>
+                    <p class="conceito">Corrige deformidades causadas por brincos pesados ou alargadores.</p>
+                    <button class="botao-navegacao botao-anterior" onclick="proxImagem()">❮</button>
+                    <button class="botao-navegacao botao-proximo" onclick="antImagem()">❯</button>
+                </div>
+                <div class="container remova">
+                    <img class = imagemespecialidade src="imagens/especialidades6_mobile.jpg" alt="texto sobre mentoplastia">
+                    <p class="especialidade">Mentoplastia</p>
+                    <p class="conceito">Cirurgia plástica do mento (queixo), com o objetivo de melhorar a harmonia da face.</p>
+                    <button class="botao-navegacao botao-anterior" onclick="proxImagem()">❮</button>
+                    <button class="botao-navegacao botao-proximo" onclick="antImagem()">❯</button>
+                </div>
+                <div class="container remova">
+                    <img class = imagemespecialidade src="imagens/especialidades7_mobile.jpg" alt="texto sobre toxina botulínica">
+                    <p class="especialidade">Toxina Botulínica</p>
+                    <p class="conceito">Age nos músculos da face e contribui para o rejuvenescimento facial, amenizando rugas.</p>
+                    <button class="botao-navegacao botao-anterior" onclick="proxImagem()">❮</button>
+                    <button class="botao-navegacao botao-proximo" onclick="antImagem()">❯</button>
+                </div>
+            </div>
+
+
+
+            <!--Cards para telas maiores-->
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+        
+                            <div class="card swiper-slide">
+                                <div class="card-image">
+                                    <img class = imagemespecialidade-screen src="imagens/especialidades1.jpg" alt="texto sobre rinoplastia">
+                                </div>
+                                <div class="card-content">
+                                    <p class="especialidade1">Rinoplastia</p>
+                                    <p class="conceito1">Cirurgia que une o funcional e a estética, proporcionando um nariz mais harmônico e uma melhor respiração.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card-image">
+                                    <img class = imagemespecialidade-screen src="imagens/especialidades2.png" alt="texto sobre blefaroplastia">
+                                </div>
+                                <div class="card-content">
+                                    <p class="especialidade2">Blefaroplastia</p>
+                                    <p class="conceito2">Cirurgia das pálpebras que ameniza os sinais da idade, corrige excesso de pele e rugas.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card-image">
+                                    <img class = imagemespecialidade-screen src="imagens/especialidades3.jpg" alt="texto sobre facelift">
+                                </div>
+                                <div class="card-content">
+                                    <p class="especialidade3">Facelift</p>
+                                    <p class="conceito3">Conhecido como ritidoplastia, tem como objetivo rejuvenescer, reposicionando estruturas da face.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card-image">
+                                    <img class = imagemespecialidade-screen src="imagens/especialidades4.jpg" alt="texto sobre lobuloplastia">
+                                </div>
+                                <div class="card-content">
+                                    <p class="especialidade4">Otoplastia</p>
+                                    <p class="conceito4">Corrige orelhas proeminentes (orelhas de abano) ou também o formato delas.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card-image">
+                                    <img class = imagemespecialidade-screen src="imagens/especialidades5.jpg" alt="texto sobre mentoplastia">
+                                </div>
+                                 <div class="card-content">
+                                    <p class="especialidade5">Lobuloplastia</p>
+                                    <p class="conceito5">Corrige deformidades causadas por brincos pesados ou alargadores.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card-image">
+                                    <img class = imagemespecialidade-screen src="imagens/especialidades6.jpg" alt="texto sobre toxina botulínica">
+                                </div>
+                                <div class="card-content">
+                                    <p class="especialidade6">Mentoplastia</p>
+                                    <p class="conceito6">Cirurgia plástica do mento (queixo), com o objetivo de melhorar a harmonia da face.</p>
+                                </div>
+                                <div class="card7 swiper-slide">
+                                    <div class="card-image">
+                                        <img class = imagemespecialidade-screen7 src="imagens/especialidades7.jpg" alt="texto sobre toxina botulínica">
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="especialidade7">Toxina Botulínica</p>
+                                        <p class="conceito7">Age nos músculos da face e contribui para o rejuvenescimento facial, amenizando rugas.</p>
+                                    </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+        <section id="sessaofeedbacks">
+            <h2 class="subtitulo2">Feedbacks</h2>
+            <p class="postitulo">Veja o que os meus pacientes estão falando!</p>
+            <div id="comments">
+                <div class="caixacomentarios visivel">
+                    <div class="aspas">
+                        <img src="imagens/vector.png" alt="Aspas duplas">
+                        <img src="imagens/vector.png" alt="Aspas duplas">
+                    </div>
+                    <p class="comentarios">Indescritível ter um sonho realizado pelas mãos da Dra. Júlia Gaspar! Desde o primeiro atendimento até o pós somente elogios para essas mãos de fada!</p>
+                    <p class="cliente"> <span class="trav">–</span> Helen Simões</p>
+                </div>
+                <div class="caixacomentarios oculto1">
+                    <div class="aspas">
+                        <img src="imagens/vector.png" alt="Aspas duplas">
+                        <img src="imagens/vector.png" alt="Aspas duplas">
+                    </div>
+                    <p class="comentarios">A Dra Júlia é fantástica! Operei tanto funcional quanto estética com ela e foi um sonho! As consultas de acompanhamento foram muito boas, indico de olhos fechados!</p>
+                    <p class="cliente"><span class="trav">–</span> Maria Eduarda</p>
+                </div>
+                <div class="caixacomentarios oculto2">
+                    <div class="aspas">
+                        <img src="imagens/vector.png" alt="Aspas duplas">
+                        <img src="imagens/vector.png" alt="Aspas duplas">
+                    </div>
+                    <p class="comentarios">Super recomendo! Realizei alguns procedimentos e minha qualidade de vida foi de 0 a 100 em algumas horas. Atendimento excelente, profissional super qualificada!</p>
+                    <p class="cliente"><span class="trav">–</span> Catia Aparecida</p>
+                </div>
+            </div>
+        </section>
+        <section id="sessaofinal">
+            <h3>Meu compromisso é com a sua qualidade de vida!</h3>
+            <img id="fotofinal" src="imagens/foto_mobile.jpg" alt="foto de Dra Júlia Gaspar">
+            <img id= "fotofinalfull" src="imagens/foto_screen.jpg" alt="foto de Dra Júlia Gaspar">
+            <span id="logo-whatsapp-instagram">
+                <a href="https://www.instagram.com/dra.juliagasparsantos/" target="_blank"><img id="logo-instagram" src="imagens/instagram.png" alt="logo instagram com hiperlink"></a>
+                <a href="https://wa.me/5511945918631" target="_blank"><img id="logo-whatsapp" src="imagens/whatsapp.png" alt="logo whatsapp com hiperlink"></a>
+            </span>
+            <div id="divfinal">
+                <p id="paragfinal">Agende a sua consulta e realize o sonho de ter saúde e qualidade de vida, alcançando os seus sonhos e objetivos estéticos!</p>
+            </div>
+            <button class="agendeconsulta2"><a href="https://wa.me/5511945918631" target="_blank">Agende a sua consulta</a></button>
+            <br>
+        </section>
+    </main>
+
+    <div id="background-footer">
+        <footer>
+            <h4>Júlia Gaspar</h4>
+            <p id="apresentacaomobile">Sou médica otorrinolaringologista, mestre em rinologia, pós-graduada em rinoplastia, e com fellowship em cirurgia plástica facial.</p>
+            <ul id="apresentacao">
+                <li>Médica otorrinolaringologista com residência médica realizada na Universidade Federal do Estado do Rio de Janeiro (UNIRIO).</li>
+                <li>Mestrado pela Universidade Federal de São Paulo (UNIFESP).</li>
+                <li>Fellowship no Instituto Paranaense de Otorrinolaringologia (IPO).</li>
+                <li>Pós-graduação em Rinoplastia no Instituto Jurado.</li>
+                <li>Fellowship em Cirurgia Plástica da Face com Dr. Raphael Gomes.</li>
+            </ul>
+            <a href="https://wa.me/5511945918631" target="_blank">
+                <div style="padding-left: 12px;">
+                    <picture class="iconetelefone">
+                        <source media="(max-width: 550px)" srcset="imagens/call_mobile.png" type="image/png">
+                        <img src="imagens/call_mobile.png" alt="ícone de telefone">
+                    </picture>
+                    <p class="numtelefone"> (11) 94591-8631</p>
+                </div>
+            </a>
+            <div style="padding-left: 12px;">
+                <picture class="iconemail">
+                    <source media="(max-width: 550px)" srcset="imagens/mail_mobile.png" type="image/png">
+                    <img src="imagens/mail_mobile.png" alt="ícone de telefone">
+                </picture>
+                <p class="email">contato@juliagaspar.com.br</p>
+            </div>
+            <div id="logo-wa-in">
+                <a href="https://wa.me/5511945918631" target="_blank"><img id="wa" src="imagens/wa.png" alt="logo whatsapp com hiperlink"></a>
+                <a href="https://www.instagram.com/dra.juliagasparsantos/" target="_blank"><img id="in" src="imagens/in.png" alt="logo instagram com hiperlink"></a>
+            </div>
+            <a href="https://www.google.com/maps?q=R.+Mato+Grosso,+306+-+cj.1406+-+Higienópolis,+São+Paulo+-+SP" target="_blank">
+                <div id="localizacaomobile">
+                    <img id="ponteiro" src="imagens/distance.png" alt="ícone ponteiro de mapa com hiperlink">
+                </div>
+                <div id="container-endereco">
+                    <p id="endereco">R. Mato Grosso, 306 - sala 1406 - Higienópolis, SP</p>
+                </div>
+            </a>
+            <aside id="localizacao">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5069467995268!2d-46.65845361085031!3d-23.550229736475792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5831af5178b1%3A0x27d2d1394fb06a41!2sR.%20Mato%20Grosso%2C%20306%20-%20cj.1406%20-%20Higien%C3%B3polis%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001239-040!5e0!3m2!1spt-BR!2sbr!4v1703092607174!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </aside>
+            <p id="rodape">Júlia Gaspar | CRM-SP: 212523  RQE: 119542</p>
+            <br>
+        </footer>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        function clickMenu() {
+            let menuMobile = document.getElementById('menu-mobile');
+                if (window.getComputedStyle(menuMobile).display === 'flex') {
+                menuMobile.style.display = 'none';
+                } else {
+                menuMobile.style.display = 'flex';
+            }
+        }
+
+
+        function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    // Adiciona manipuladores de clique aos links do menu
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuLinks = document.querySelectorAll('#menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+                const sectionId = link.getAttribute('href').substring(1);
+                scrollToSection(sectionId);
+            });
+        });
+    });
+
+
+
+
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.container');
+    
+        function showImage(index) {
+            images.forEach((image, i) => {
+                if (i === index) {
+                    image.classList.remove('remova');
+                } else {
+                    image.classList.add('remova');
+                }
+            });
+        }
+    
+        function proxImagem() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+    
+        function antImagem() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+
+        
+        
+        
+            let swiper = new Swiper(".slide-content", {
+            slidesPerView: 3.5,
+            centeredSlides: true,
+            spaceBetween: 25,
+            pagination: {
+            type: "fraction",
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+
+        let nextButton = document.querySelector(".swiper-button-next");
+        let prevButton = document.querySelector(".swiper-button-prev");
+
+        let nextClickCount = 0;
+        let prevClickCount = 0;
+
+        nextButton.addEventListener("click", function () {
+        nextClickCount++;
+
+            if (nextClickCount % 3 === 0) {
+            swiper.allowSlideNext = false;
+            nextButton.classList.add("swiper-button-disabled");
+            } else {
+                swiper.allowSlideNext = true;
+                nextButton.classList.remove("swiper-button-disabled");
+            }
+        });
+
+        prevButton.addEventListener("click", function () {
+        prevClickCount++;
+
+            if (prevClickCount % 3 === 0) {
+            swiper.allowSlideNext = true;
+            nextButton.classList.remove("swiper-button-disabled");
+        }
+    });
+
+
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.innerWidth <= 992) {
+                const comments = document.querySelectorAll('.caixacomentarios');
+                let currentIndex = 0;
+
+                function showComment(index) {
+                    comments.forEach((comment, i) => {
+                        if (i === index) {
+                            comment.classList.add('visivel');
+                        } else {
+                            comment.classList.remove('visivel');
+                }
+            });
+        }
+
+        function nextComment() {
+            comments[currentIndex].classList.remove('visivel');
+            currentIndex = (currentIndex + 1) % comments.length;
+            comments[currentIndex].classList.add('visivel');
+        }
+
+        setInterval(nextComment, 8000);
+    } else {
+        console.log ("Largura da tela é maior que 992px. Não executando o código Javascript para a Seção de Feedbacks.")
+    }
+    });
+
+
+    </script>
+    
+</body>
+</html>

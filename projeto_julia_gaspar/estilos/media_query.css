@@ -1,0 +1,1670 @@
+/* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Handsome';
+    src: url('../fontes/handsome-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lust Slim';
+    src: url('../fontes/lust-slim.ttf') format('truetype');
+}
+
+/* Definição de estilos */
+:root {
+    --fonte1: 'Sora', sans-serif;
+    --fonte2: 'Handsome', sans-serif;
+    --fonte3: 'Lust Slim', sans-serif;
+    --fonte4: 'Inter', sans-serif;
+    --fonte5: 'Hind Vadodara', sans-serif;
+    --fonte6: 'Open Sans', sans-serif;
+    --cor1: #4C3735;
+    --cor2: #A56442;
+    --cor3: #3B6B27;
+    --cor4: #EDE5D2;
+    --cor5: #000;
+    --cor6: #E7D3B9;
+    --cor7: #331B3B;
+    --cor8: #513D38;
+    --cor9: #FCF9F5;
+}
+
+/*Telas menores*/
+/*@media screen and (max-width: 390px) {
+    h1 {
+        padding: 30px 20px 30px 4vw;
+        color: var(--cor2);
+        font-family:   var(--fonte2);
+        font-weight: 400;
+        font-size: 10.5vw;
+        line-height: 44px;
+    }
+
+    button {
+        margin-top: 4vh;
+        width: 50vw;
+        height: 5.5vh; 
+        border-radius: 20px;
+        padding-bottom: 10px;
+        background-color: var(--cor6);
+        border: none;
+    }
+    
+    button > a {
+        text-decoration: none;
+        color: var(--cor7);
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size: 3vw;
+        line-height: 17.64px;
+    }
+
+    #prof {
+        margin-bottom: 20px;
+    }
+
+    .proposito {
+        display: none;
+    }
+
+    img.imagemespecialidade {
+        width: 250px;
+        height: 300px;
+    }
+
+    div.caixacomentarios {
+        
+        height: 270px;
+        box-shadow: 2.5px 0px 1px rgba(0, 0, 0, 0.055);
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .aspas {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-top: 10px;
+        width: 40px;
+        height: 35px;
+    }
+}*/
+
+/*Smartphones*/
+@media screen and (max-width:540px) {
+    #sessaoprincipal {
+        height: max-content;
+        background-image: url(../imagens/perfil.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+        position: relative;
+    }
+
+    header {
+        background-color: var(--cor6);
+        height: 67px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0vh 8vw 0vh 2vw;
+    }
+
+    #logo-cut {
+        display: none;
+    }
+
+    #logo {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: var(--cor6);
+    }
+
+    .menu-mobile-item {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 30px;
+        text-decoration: none;
+        color: var(--cor5);
+    }
+
+    h1 {
+        padding: 30px 0px 30px 25px;
+        color: var(--cor2);
+        font-family:   var(--fonte2);
+        font-weight: 400;
+        font-size: 10vw;
+        line-height: 44px;
+    }
+
+    .profissao {
+        width: 68vw;
+        height: 45px;
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size: 3.9vw;
+        line-height: 22.68px;
+        color: var(--cor3);
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 1vh;
+    }
+
+    .registro {
+        margin-left: 10px;
+        margin-top: 1vh;
+        padding-top: 0.5vh;
+        border-top: 0.1em solid #000;
+        width: 44vw;
+        font-family: var(--fonte4);
+        font-size: 3vw;
+        font-weight: 500;
+        line-height: 19.36px;
+        color: var(--cor5);
+    }
+
+    .proposito {
+        display: none;
+        margin-top: 11vh
+    }
+
+    .botao {
+        position: absolute;
+        top: 190px;
+        left: 20px;
+    }
+
+    .slide-content {
+        display: none;
+    }
+
+    .imagemespecialidade {
+        width: 299px;
+        height: 320px;
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 35px;
+        opacity: 0.7;
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        transition: opacity 0.5s ease;
+    }
+
+    .container-screen {
+        display: none;
+    }
+
+    .especialidade, .conceito {
+        position: absolute;
+        width: 100%;
+    }
+
+    .especialidade {
+        top: 23px;
+        font-family: var(--fonte3);
+        font-weight: 400;
+        font-size: 6vw;
+        line-height: 33px;
+        text-align: center;
+        padding-left: 22vw;
+        padding-right: 22vw;
+    }
+
+    .conceito {
+        bottom: 40px;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 4.2vw;
+        line-height: 22.68px;
+        text-align: center;
+        padding-left: 22vw;
+        padding-right: 22vw;
+    }
+
+    .remova {
+        display: none;
+    }
+
+    .botao-navegacao {
+        position: absolute;
+        top: 43%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        cursor: pointer;
+        color: #000;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        padding: 1px;
+        border-radius: 5px;
+    }
+
+    .botao-anterior {
+        left: -65px;
+    }
+
+    .botao-proximo {
+        right: -65px;
+    }
+
+    #sessaofeedbacks {
+        position: relative;
+    }
+
+    div.caixacomentarios {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        height: 36vh;
+        box-shadow: 2.5px 0px 1px rgba(0, 0, 0, 0.055);
+        margin-right: 30px;
+        margin-left: 40px;
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    
+    .caixacomentarios.visivel {
+        opacity: 1;
+        z-index: 3;
+    }
+
+    .caixacomentarios.oculto1 {
+        z-index: 2;
+    }
+
+    .caixacomentarios.oculto2 {
+        z-index: 1;
+    }
+
+    .aspas {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-top: 10px;
+    }
+    
+    .comentarios {
+        font-family: var(--fonte5);
+        font-weight: 500;
+        font-size: 4.5vw;
+        line-height: 3vh;
+        text-align: left;
+        padding-right: 27px;
+        padding-top: 30px;
+        color: var(--cor7);
+    }
+
+    .cliente {
+        font-family: var(--fonte5);
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25.49px;
+        padding-top: 2vh;
+        color: var(--cor5);
+    }
+
+    span.trav {
+        color: var(--cor2);
+    } 
+
+    h3 {
+        font-family: var(--fonte3);
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 24.8px;
+        color: var(--cor3);
+        padding-right: 3vw;
+        padding-left: 40vw;
+        padding-top: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #paragfinal {
+        margin-top: 45px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 25px;
+        font-family: var(--fonte6);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24.51px;
+        color: var(--cor5);
+    }
+
+    .agendeconsulta2 {
+        display: block;
+        margin: auto;
+    }
+
+    #fotofinal {
+        width:  194px; 
+        height: 217px; 
+        border-radius: 20px;
+        margin-left: 17px;
+        margin-top: -90px;
+    }
+
+    #fotofinalfull {
+        display: none;
+    }
+
+    #logo-whatsapp-instagram {
+        margin-left: 3vw;
+        position: absolute;
+        left: 210px;
+        top: 90px;
+    }
+
+    #logo-instagram {
+        padding-bottom: 60px;
+    }
+
+    #logo-whatsapp {
+        padding-bottom: 60px;
+    }
+
+    h4 {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27.72px;
+        padding-top: 8px;
+        padding-left: 12px;
+        color: var(--cor5);
+    }
+
+    p#apresentacaomobile {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 20px;
+        padding-left: 12px;
+        padding-right: 46px;
+        color: var(--cor5);
+    }
+
+    ul#apresentacao {
+        display: none;
+    }
+
+    .iconetelefone, .numtelefone {
+        margin-top: 8px;
+    }
+
+    .numtelefone {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 9px;
+        color: var(--cor5);
+    }
+    
+    .iconemail, .email {
+        margin-top: 8px;
+    }
+
+    .email {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 9px;
+        color: var(--cor5);
+    }
+
+    aside#localizacao {
+        display: none;
+    }
+
+    #localizacaomobile {
+        margin-top: 5px;
+        margin-left: 7px;
+        margin-right: 0;
+    }
+
+    #container-endereco {
+        position: relative;
+        z-index: 1;
+        margin-left: 40px;
+        margin-top: -25px;
+    }
+
+    #endereco {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21.57px;
+        color: #414141;
+        display: inline-block;
+    }
+
+    #rodape {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15.12px;
+        color: var(--cor5);
+        text-align: center;
+        margin-top: 15px;
+        padding-top: 17px;
+        border-top: 1px solid #000;
+    }
+
+    #logo-wa-in {
+        display: none;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 541px) and (max-width: 992px) {
+    header {
+        background-color: var(--cor6);
+        height: 67px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0vh 8vw 0vh 2vw;
+    }
+
+    #sessaoprincipal {
+        /*height: max-content;*/
+        background-image: url(../imagens/perfil_full.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+        position: relative;
+    }
+
+    #logo-cut {
+        display: none;
+    }
+
+    #logo {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: var(--cor6);
+    }
+
+    .menu-mobile-item {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 30px;
+        text-decoration: none;
+        color: var(--cor5);
+    }
+
+    h1 {
+        padding: 40px 0px 40px 50px;
+        color: var(--cor2);
+        font-family:   var(--fonte2);
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 44px;
+    }
+    
+    p {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 22px;
+        color: black;
+    }
+
+    .profissao {
+        width: 65vw;
+        height: 45px;
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size: 3vw;
+        line-height: 28px;
+        color: var(--cor3);
+        padding: 0px 10px 0px 42px;
+    }
+
+    .registro {
+        width: 33vw;
+        margin-top: 2vh;
+        margin-left: 43px;
+        padding-top: 1vh;
+        padding-left: 0px;
+        border-top: 0.1em solid #000;
+        font-family: var(--fonte4);
+        font-size: 2.3vw;
+        font-weight: 500;
+        line-height: 19.36px;
+        color: var(--cor5);
+    }
+
+    .proposito {
+        display: none;
+        margin-top: 11vh
+    }
+    .botao {
+        position: absolute;
+        top: 230px;
+        left: 43px;
+    }
+
+    button {
+        width:  370px; /* 49vw;*/
+        height: 40px; /* 3.5vh;*/
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--cor6);
+        border: none;
+    }
+    
+    button > a {
+        text-decoration: none;
+        text-align: center;
+        color: var(--cor7);
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size: 2vw; /*14px;*/
+        line-height: 17.64px;
+    }
+    
+    h2 {
+        margin-bottom: 8px;
+        padding-top: 30px;
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 30.24px;
+        text-align: center;
+        color: var(--cor8);
+    }
+    
+    .postitulo {
+        margin-bottom: 20px;
+        margin-left: 48px;
+        margin-right: 48px;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22.68px;
+        text-align: center;
+        color: var(--cor5);
+    }
+
+    .slide-content {
+        display: none;
+    }
+
+    .imagemespecialidade {
+        width: 430px; /*398.67px;*/
+        height: 456px; /*426.67px;*/
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 35px;
+        opacity: 0.7;
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        transition: opacity 0.5s ease;
+    }
+
+    .container-screen {
+        display: none;
+    }
+
+    .especialidade, .conceito {
+        position: absolute;
+        width: 100%;
+    }
+
+    .especialidade {
+        top: 23px;
+        font-family: var(--fonte3);
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+
+    .conceito {
+        bottom: 40px;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 30px;
+        text-align: center;
+        padding-left: 28vw;
+        padding-right: 28vw;
+        margin-bottom: 10px;
+    }
+
+    .remova {
+        display: none;
+    }
+
+    .botao-navegacao {
+        position: absolute;
+        top: 43%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        cursor: pointer;
+        color: #000;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        padding: 1px;
+        border-radius: 5px;
+    }
+
+    .botao-anterior {
+        left: -65px;
+    }
+
+    .botao-proximo {
+        right: -65px;
+    }
+
+    #sessaofeedbacks {
+        position: relative;
+    }
+
+    div.caixacomentarios {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        height: 15em;
+        box-shadow: 2.5px 0px 1px rgba(0, 0, 0, 0.055);
+        margin-right: 90px;
+        margin-left: 80px;
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    
+    .caixacomentarios.visivel {
+        opacity: 1;
+        z-index: 3;
+    }
+
+    .caixacomentarios.oculto1 {
+        z-index: 2;
+    }
+
+    .caixacomentarios.oculto2 {
+        z-index: 1;
+    }
+
+    .aspas {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-top: 10px;
+    }
+    
+    .comentarios {
+        font-family: var(--fonte5);
+        font-weight: 500;
+        font-size: 2.5vw;
+        line-height: 30px;
+        text-align: left;
+        padding-right: 27px;
+        padding-top: 30px;
+        color: var(--cor7);
+    }
+
+    .cliente {
+        font-family: var(--fonte5);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25.49px;
+        padding-top: 2vh;
+        color: var(--cor5);
+    }
+
+    span.trav {
+        color: var(--cor2);
+    }
+
+    #sessaofinal {
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    h3 {
+        font-family: var(--fonte3);
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 35px;
+        color: var(--cor3);
+        padding-right: 2vw;
+        padding-left: 40vw;
+        padding-top: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #paragfinal {
+        text-align: left;
+        padding-left: 40vw;
+        padding-right: 2vw;
+        margin-top: -170px;
+        margin-bottom: 25px;
+        font-family: var(--fonte6);
+        font-weight: 400;
+        font-size: 2.5vw;
+        line-height: 27px;
+        color: var(--cor5);
+    }
+
+    .agendeconsulta2 {
+        position: absolute;
+        top: 220px;
+        left: 45vw;
+    }
+
+    #fotofinal {
+        display: none;
+    }
+
+    #fotofinalfull {
+        display: block;
+        width: 270px;
+        height: 317px;
+        border-radius: 20px;
+        margin-left: 2.5vw;
+        margin-top: -130px;
+    }
+
+    #logo-whatsapp-instagram {
+        display: none;
+    }
+
+    h4 {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 27.72px;
+        padding-top: 15px;
+        padding-left: 20px;
+        color: var(--cor5);
+    }
+
+    p#apresentacaomobile {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 60px;
+        color: var(--cor5);
+    }
+
+    ul#apresentacao {
+        display: none;
+    }
+
+    .iconetelefone, .numtelefone {
+        margin-top: 10px;
+        margin-left: 12px;
+    }
+
+    .numtelefone {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        margin-left: 9px;
+        color: var(--cor5);
+    }
+    
+    .iconemail, .email {
+        margin-top: 10px;
+        margin-left: 12px;
+    }
+
+    .email {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        margin-left: 9px;
+        color: var(--cor5);
+    }
+
+    aside#localizacao {
+        display: none;
+    }
+
+    #localizacaomobile {
+        margin-top: 5px;
+        margin-left: 18px;
+        margin-right: 0;
+    }
+
+    #container-endereco {
+        position: relative;
+        z-index: 1;
+        margin-left: 52px;
+        margin-top: -25px;
+    }
+
+    #endereco {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.57px;
+        color: #414141;
+        display: inline-block;
+    }
+
+    #rodape {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 15.12px;
+        color: var(--cor5);
+        text-align: center;
+        margin-top: 15px;
+        padding-top: 17px;
+        border-top: 1px solid #000;
+    }
+    
+    footer {
+        background-color: var(--cor6);
+        height: max-content;
+    }
+    
+    .iconetelefone, .numtelefone {
+        display: inline-block;
+    }
+    
+    .iconemail, .email {
+        display: inline-block;
+    }
+
+    #logo-wa-in {
+        display: none;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) {
+    header {
+        background-color: var(--cor6);
+        height: 67px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0vh 2vw 0vh 4vw;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-cut {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    #burguer {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu-mobile {
+        display: none;
+    }
+
+    header nav {
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22.68px;
+    }
+    
+    .menu-item {
+        text-decoration: none;
+        color: var(--cor5);
+        padding: 0vh 0vw 0vh 1vw;
+    }
+
+    h1 {
+        margin: 0px 0px 0px -310px;
+        padding: 10vh 0px 10px 50px;
+        color: var(--cor2);
+        font-family:   var(--fonte2);
+        font-weight: 400;
+        font-size: 6vw; 
+        font-style: normal;
+        line-height: normal;
+    }
+    
+    p {
+        font-family: var(--fonte1);
+        font-weight: 500;
+        font-size: 22px;
+        color: black;
+    }
+
+    .profissao {
+        width: 65vw;
+        height: 45px;
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size:  1.8vw;/*1.8vw;*/
+        font-style: normal;
+        line-height: normal;
+        color: var(--cor3);
+        margin: 0px 0px 22px -262px;
+        padding: 0px 399px 0px 0px;
+    }
+
+    .registro {
+        width: 19vw; 
+        margin-top: 3vh;
+        margin-left: -262px;
+        padding-top: 5px;
+        padding-left: 0px;
+        border-top: 0.1em solid #000;
+        font-family: var(--fonte4);
+        font-size: 1.3vw;   
+        font-weight: 400;
+        line-height: 21.78px;
+        color: var(--cor5);
+    }
+
+    .proposito {
+        width: 40vw; 
+        height: 54px;
+        margin-left: -262px; 
+        margin-top: -190px;
+        padding-left: 0px;
+        font-family: var(--fonte1);
+        font-size: 1.5vw;    
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: var(--cor5);
+    }
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        margin-left: -77vw;
+        margin-top: 25vh;
+    }
+
+    .agendeconsulta1 {
+        width:  35vw; 
+        height: 40px; /*3.5vh;*/
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--cor6);
+        border: none;
+    }
+
+    button > a {
+        text-decoration: none;
+        text-align: center;
+        color: var(--cor7);
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size: 1.5vw; /*14px;*/
+        line-height: 17.64px;
+    }
+    
+    h2 {
+        margin-bottom: 8px;
+        padding-top: 45px;
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 30.24px;
+        text-align: center;
+        color: var(--cor8);
+    }
+
+    .postitulo {
+        margin-bottom: 20px;
+        margin-left: 48px;
+        margin-right: 48px;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22.68px;
+        text-align: center;
+        color: var(--cor5);
+    }
+
+    #sessaoespecialidades {
+        background-color: var(--cor9);
+        background-size: cover;
+        height: 652px;
+    }
+
+    .slide-mobile {
+        display: none;
+    }
+
+    .slide-container {
+        display: block;
+        max-width: 1100px;
+        height: 500px;
+        width: 1050px;
+        background-color: var(--cor9);
+        padding: 40px 0px;
+        color: #fff;
+    }
+
+    .slide-content {
+        margin: 0px -330px 0px -650px;
+    }
+
+    .card {
+        flex: 0 0 calc(5% - 0px);
+        margin: 15px
+    }
+
+    .card7 {
+        position: absolute;
+        top: -150px;
+        left: 335px;
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .card-image {
+        position: relative;
+        height: 150px;
+        width: 180px;
+    }
+
+    .card-content {
+        position: relative;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .imagemespecialidade-screen {
+        position: relative;
+        height: 482px;
+        width: 22vw;
+        border-radius: 20px;
+        margin-left: 40px;
+        opacity: 0.7;
+    }
+
+    .imagemespecialidade-screen7 {
+        position: relative;
+        height: 482px;
+        width: 22vw;
+        border-radius: 20px;
+        margin-left: 40px;
+        opacity: 0.7;
+    }
+
+    .especialidade1, .especialidade2, .especialidade3, 
+    .especialidade4, .especialidade5, .especialidade6, 
+    .especialidade7 {
+        font-family: var(--fonte3);
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-left: 40px;
+        color: var(--cor5);
+    }
+
+    .especialidade1 {
+        position: absolute;
+        top: -135px;
+        left: 5.5vw;
+    }
+
+    .especialidade2 {
+        position: absolute;
+        top: -135px;
+        left: 4.4vw;
+    }
+
+    .especialidade3 {
+        position: absolute;
+        top: -135px;
+        left: 7.2vw;
+    }
+
+    .especialidade4 {
+        position: absolute;
+        top: -135px;
+        left: 6vw;
+    }
+
+    .especialidade5 {
+        position: absolute;
+        top: -135px;
+        left: 4.5vw;
+    }
+
+    .especialidade6 {
+        position: absolute;
+        top: -135px;
+        left: 4.5vw;
+    }
+
+    .especialidade7 {
+        position: absolute;
+        top: -135px;
+        left: 1.7vw;
+        text-align: center;
+        width: 18vw;
+    }
+
+    .conceito1, .conceito2, .conceito3,
+    .conceito4, .conceito5, .conceito6,
+    .conceito7 {
+        position: absolute;
+        width: 270px;
+        text-align: center;
+        font-family: var(--fonte1);
+        font-size: 1.4vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 40px;
+        color: var(--cor5);
+    }
+
+    #sessaofeedbacks {
+        position: relative;
+    }
+
+    #comments {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    div.caixacomentarios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24em;
+        height: 19em;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.185);
+        margin-top: 50px;
+        padding: 20px 5px 40px 30px;
+    }
+
+    .aspas {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .comentarios {
+        font-family: var(--fonte5);
+        font-weight: 500;
+        font-size: 1.2vw;
+        line-height: 25.49px;
+        text-align: left;
+        padding-right: 27px;
+        color: var(--cor7);
+    }
+
+    .cliente {
+        font-family: var(--fonte5);
+        font-weight: 600;
+        font-size: 16px;
+        font-style: normal;
+        letter-spacing: 0.32px;
+        line-height: 25.49px;
+        color: var(--cor5);
+    }
+
+    span.trav {
+        color: var(--cor2);
+    }
+
+    #sessaofinal {
+        margin-top: 130px;
+        padding-bottom: 140px;
+    }
+
+    h3 {
+        font-family: var(--fonte3);
+        font-weight: 400;
+        font-size: 42px;
+        font-style: normal;
+        line-height: 52.08px;
+        color: var(--cor3);
+        width: 568px;
+        margin-left: 600px;
+        padding-top: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #paragfinal {
+        text-align: left;
+        width: 606px;
+        margin-top: -190px;
+        margin-left: 600px;
+        margin-bottom: 25px;
+        font-family: var(--fonte6);
+        font-weight: 400;
+        font-size: 24px;
+        font-style: normal;
+        line-height: 32.68px;
+        color: var(--cor5);
+    }
+
+    .agendeconsulta2 {
+        position: absolute;
+        top: 300px;
+        left: 700px;
+        width: 385px;
+        height: 52px;
+        border-radius: 10px;
+    }
+
+    #fotofinal {
+        display: none;
+    }
+
+    #fotofinalfull {
+        display: block;
+        width: 337px;
+        height: 402px;
+        border-radius: 20px;
+        margin-left: 14vw;
+        margin-top: -195px;
+    }
+
+    #logo-whatsapp-instagram {
+        display: none;
+    }
+
+    .container-midias {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    h4 {
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 30px;
+        font-style: normal;
+        line-height: normal;
+        padding-top: 30px;
+        padding-left: 70px;
+        color: var(--cor5);
+    }
+
+    #apresentacao {
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        width: 654px;
+        padding-top: 18px;
+        padding-left: 90px;
+        color: var(--cor5);
+    }
+
+    #apresentacaomobile {
+        display: none;
+    }
+
+    .iconetelefone, .numtelefone {
+        margin-top: 10px;
+        margin-left: 60px;
+        padding-top: 18px;
+    }
+
+    .numtelefone {
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        margin-left: 5px;
+        color: var(--cor5);
+    }
+    
+    .iconemail, .email {
+        margin-top: 1px;
+        margin-left: 60px;
+    }
+
+    .email {
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        margin-left: 5px;
+        color: var(--cor5);
+    }
+
+    aside#localizacao {
+        display: block;
+        position: relative;
+        width: 470px;
+        height: 240px;
+        background: #fff;
+        border-radius: 20px;
+        margin-left: 700px;
+        margin-top: -220px;
+        margin-bottom: 60px;
+    }
+
+    aside iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    #localizacaomobile {
+        display: none;
+    }
+
+    #container-endereco {
+        display: none;
+    }
+
+    #rodape {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        line-height: normal;
+        color: var(--cor5);
+        text-align: center;
+        margin-top: 15px;
+        padding-top: 17px;
+        border-top: 1px solid #000;
+    }
+
+    #background-footer {
+        background-color: var(--cor9);
+    }
+    
+    footer {
+        background-color: var(--cor6);
+        height: max-content;
+        border-radius: 0px 158px 0px 0px;
+    }
+
+    #logo-wa-in {
+        width: 110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 55px;
+        margin-top: 20px;
+    }
+    
+    .iconetelefone, .numtelefone {
+        display: inline-block;
+    }
+    
+    .iconemail, .email {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1220px) {
+    #sessaoprincipal {
+        background-image: url(../imagens/perfil_original.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 60vh;
+        margin-left: 350px;
+    }
+
+    #menu-mobile {
+        display: none;
+    }
+
+    h1 {
+        margin: 0px 0px 0px -320px;
+        padding: 5vh 0px 10px 50px;
+        color: var(--cor2);
+        font-family:   var(--fonte2);
+        font-weight: 400;
+        font-size: 8vw; 
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .profissao {
+        width: 75vw;
+        height: 10px;
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size:  2.5vw;
+        font-style: normal;
+        line-height: normal;
+        color: var(--cor3);
+        margin: 0px 0px 22px -270px;
+        padding: 2vh 399px 0px 0px;
+    }
+
+    .registro {
+        width: 25vw; 
+        margin-top: 15vh;
+        margin-left: -268px;
+        padding-top: 6px;
+        padding-left: 0px;
+        border-top: 0.1em solid #000;
+        font-family: var(--fonte4);
+        font-size: 1.7vw;   
+        font-weight: 400;
+        line-height: 21.78px;
+        color: var(--cor5);
+    }
+
+    .proposito {
+        display: none;
+        /*width: 55vw; 
+        height: 54px;
+        margin-left: -268px; 
+        margin-top: -17vh;
+        padding-left: 0px;
+        font-family: var(--fonte1);
+        font-size: 2vw;    
+        font-weight: 400;
+        font-style: normal;
+        line-height: 25px;
+        color: var(--cor5);*/
+    }
+
+    .agendeconsulta1 {
+        width:  35vw; 
+        height: 40px;
+        margin-left: 0px;
+        margin-top: -18vh;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--cor6);
+        border: none;
+    }
+
+    .conceito1, .conceito2, .conceito3,
+    .conceito4, .conceito5, .conceito6,
+    .conceito7 {
+        position: absolute;
+        top: 210px;
+        left: 1vw;
+        width: 20vw;
+        text-align: center;
+        font-family: var(--fonte1);
+        font-size: 1.4vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--cor5);
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        color: var(--cor5);
+    }
+
+    h3 {
+        font-family: var(--fonte3);
+        font-weight: 400;
+        font-size: 32px;
+        font-style: normal;
+        line-height: 45px;
+        color: var(--cor3);
+        width: 450px;
+        margin-left: 520px;
+        padding-top: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #paragfinal {
+        text-align: left;
+        width: 450px;
+        margin-top: -190px;
+        margin-left: 520px;
+        margin-bottom: 25px;
+        font-family: var(--fonte6);
+        font-weight: 400;
+        font-size: 1.4vw;
+        font-style: normal;
+        line-height: 32.68px;
+        color: var(--cor5);
+    }
+
+    .agendeconsulta2 {
+        position: absolute;
+        top: 240px;
+        left: 550px;
+        width: 385px;
+        height: 52px;
+        border-radius: 10px;
+    }
+
+    aside#localizacao {
+        display: block;
+        position: relative;
+        width: 26vw;
+        height: 230px;
+        background: #fff;
+        border-radius: 20px;
+        margin-left: 700px;
+        margin-top: -220px;
+        margin-bottom: 60px;
+    }
+
+    aside iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 1220px){
+    #sessaoprincipal {
+        background-image: url(../imagens/perfil_original.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        margin-left: 350px;
+    }
+
+    #menu-mobile {
+        display: none;
+    }
+
+
+    .conceito1, .conceito2, .conceito3,
+    .conceito4, .conceito5, .conceito6,
+    .conceito7 {
+        position: absolute;
+        top: 210px;
+        left: 1vw;
+        width: 20vw;
+        text-align: center;
+        font-family: var(--fonte1);
+        font-size: 1.3vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--cor5);
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        color: var(--cor5);
+    }
+}

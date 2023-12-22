@@ -1,0 +1,119 @@
+/* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Handsome';
+    src: url('../fontes/handsome-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lust Slim';
+    src: url('../fontes/lust-slim.ttf') format('truetype');
+}
+
+/* Definição de estilos */
+:root {
+    --fonte1: 'Sora', sans-serif;
+    --fonte2: 'Handsome', sans-serif;
+    --fonte3: 'Lust Slim', sans-serif;
+    --fonte4: 'Inter', sans-serif;
+    --fonte5: 'Hind Vadodara', sans-serif;
+    --fonte6: 'Open Sans', sans-serif;
+    --cor1: #4C3735;
+    --cor2: #A56442;
+    --cor3: #3B6B27;
+    --cor4: #EDE5D2;
+    --cor5: #000;
+    --cor6: #E7D3B9;
+    --cor7: #331B3B;
+    --cor8: #513D38;
+    --cor9: #FCF9F5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#burguer {
+    color: var(--cor5);
+    cursor: pointer;
+}
+
+p {
+    font-family: var(--fonte1);
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+}
+
+button {
+    width: 50vw; /*210px;*/
+    height: 5vh; /*48px;*/
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 20px;
+    background-color: var(--cor6);
+    border: none;
+}
+
+button > a {
+    text-decoration: none;
+    color: var(--cor7);
+    font-family: var(--fonte1);
+    font-weight: 600;
+    font-size: 3.5vw; /*14px;*/
+    line-height: 17.64px;
+}
+
+h2 {
+    padding-top: 25px;
+    font-family: var(--fonte1);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30.24px;
+    text-align: center;
+    color: var(--cor8);
+}
+
+.postitulo {
+    margin-bottom: 10px;
+    margin-left: 48px;
+    margin-right: 48px;
+    font-family: var(--fonte1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22.68px;
+    text-align: center;
+    color: var(--cor5);
+}
+
+#sessaoespecialidades {
+    background-color: var(--cor9);
+    background-size: cover;
+    height: max-content;
+}
+
+#sessaofinal {
+    background-color: var(--cor9);
+    background-size: cover;
+    height: max-content;
+    margin-top: 370px;
+    position: relative;
+}
+
+footer {
+    background-color: var(--cor6);
+    height: max-content;
+}
+
+.iconetelefone, .numtelefone {
+    display: inline-block;
+}
+
+.iconemail, .email {
+    display: inline-block;
+}
