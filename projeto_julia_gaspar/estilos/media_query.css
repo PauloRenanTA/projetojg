@@ -1,10 +1,11 @@
-/* Reset e configurações globais */
+/* Reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Fontes personalizadas*/
 @font-face {
     font-family: 'Handsome';
     src: url('../fontes/handsome-regular.ttf') format('truetype');
@@ -15,7 +16,7 @@
     src: url('../fontes/lust-slim.ttf') format('truetype');
 }
 
-/* Definição de estilos */
+/* Definição de estilos gerais*/
 :root {
     --fonte1: 'Sora', sans-serif;
     --fonte2: 'Handsome', sans-serif;
@@ -34,67 +35,6 @@
     --cor9: #FCF9F5;
 }
 
-/*Telas menores*/
-/*@media screen and (max-width: 390px) {
-    h1 {
-        padding: 30px 20px 30px 4vw;
-        color: var(--cor2);
-        font-family:   var(--fonte2);
-        font-weight: 400;
-        font-size: 10.5vw;
-        line-height: 44px;
-    }
-
-    button {
-        margin-top: 4vh;
-        width: 50vw;
-        height: 5.5vh; 
-        border-radius: 20px;
-        padding-bottom: 10px;
-        background-color: var(--cor6);
-        border: none;
-    }
-    
-    button > a {
-        text-decoration: none;
-        color: var(--cor7);
-        font-family: var(--fonte1);
-        font-weight: 600;
-        font-size: 3vw;
-        line-height: 17.64px;
-    }
-
-    #prof {
-        margin-bottom: 20px;
-    }
-
-    .proposito {
-        display: none;
-    }
-
-    img.imagemespecialidade {
-        width: 250px;
-        height: 300px;
-    }
-
-    div.caixacomentarios {
-        
-        height: 270px;
-        box-shadow: 2.5px 0px 1px rgba(0, 0, 0, 0.055);
-        margin-right: 40px;
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-
-    .aspas {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        padding-top: 10px;
-        width: 40px;
-        height: 35px;
-    }
-}*/
 
 /*Smartphones*/
 @media screen and (max-width:540px) {
@@ -483,7 +423,9 @@
 }
 
 /*Tablet*/
-@media screen and (min-width: 541px) and (max-width: 992px) {
+@media screen and (min-width: 540px) and (max-width: 992px) {
+
+    /*Estilos para Cabeçalho*/
     header {
         background-color: var(--cor6);
         height: 67px;
@@ -492,15 +434,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 0vh 8vw 0vh 2vw;
-    }
-
-    #sessaoprincipal {
-        /*height: max-content;*/
-        background-image: url(../imagens/perfil_full.png);
-        background-repeat: no-repeat;
-        background-position: center right;
-        background-size: contain;
-        position: relative;
     }
 
     #logo-cut {
@@ -530,6 +463,16 @@
         padding-right: 30px;
         text-decoration: none;
         color: var(--cor5);
+    }
+
+    /*Estilos sessão inicial do main*/
+    #sessaoprincipal {
+        /*height: max-content;*/
+        background-image: url(../imagens/perfil_full.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+        position: relative;
     }
 
     h1 {
@@ -603,7 +546,8 @@
         line-height: 17.64px;
         cursor: pointer;
     }
-    
+
+    /*Estilos para sessão procedimentos*/    
     h2 {
         margin-bottom: 8px;
         padding-top: 30px;
@@ -705,6 +649,7 @@
         right: -65px;
     }
 
+    /*Estilos para a sessão feedbacks*/
     #sessaofeedbacks {
         position: relative;
     }
@@ -767,6 +712,7 @@
         color: var(--cor2);
     }
 
+    /*Estilos para sessão final*/
     #sessaofinal {
         padding-top: 20px;
         padding-bottom: 100px;
@@ -821,6 +767,7 @@
         display: none;
     }
 
+    /*Estilos rodapé*/
     h4 {
         font-family: var(--fonte1);
         font-weight: 500;
@@ -930,8 +877,10 @@
     }
 }
 
+
 /*Desktop*/
 @media screen and (min-width: 992px) {
+    /*Estilos para cabeçalho*/
     header {
         background-color: var(--cor6);
         height: 67px;
@@ -982,6 +931,7 @@
         transition: color 0.2s ease-out;
     }
 
+    /*Estilos para sessão inicial do main*/
     h1 {
         margin: 0px 0px 0px -310px;
         padding: 10vh 0px 10px 50px;
@@ -1070,12 +1020,14 @@
 
     .agendeconsulta1:hover {
         background-color: var(--cor2);
+        transition: color 2s ease-out;
     }
 
     .agendeconsulta2:hover {
         background-color: var(--cor2);
     }
-    
+
+    /*Estilos para sessão de procedimentos*/
     h2 {
         margin-bottom: 8px;
         padding-top: 45px;
@@ -1120,7 +1072,7 @@
     }
 
     .slide-content {
-        margin: 0px -330px 0px -650px; /*0px -330px 0px -650px;*/
+        margin: 0px -330px 0px -650px;
     }
 
     .card {
@@ -1249,6 +1201,7 @@
         color: var(--cor5);
     }
 
+    /*Estilos para sessão feedbacks*/
     #sessaofeedbacks {
         position: relative;
     }
@@ -1305,6 +1258,7 @@
         color: var(--cor2);
     }
 
+    /*Estilos para sessão final*/
     #sessaofinal {
         margin-top: 130px;
         padding-bottom: 140px;
@@ -1364,13 +1318,7 @@
         display: none;
     }
 
-    .container-midias {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
+    /*Estilos para rodapé*/
     h4 {
         font-family: var(--fonte1);
         font-weight: 400;
@@ -1497,6 +1445,11 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1220px) {
+    #menu-mobile {
+        display: none;
+    }
+
+    /*Estilos para sessão inicial do main*/
     #sessaoprincipal {
         background-image: url(../imagens/perfil_original.png);
         background-repeat: no-repeat;
@@ -1504,10 +1457,6 @@
         background-position: center center;
         height: 60vh;
         margin-left: 350px;
-    }
-
-    #menu-mobile {
-        display: none;
     }
 
     h1 {
@@ -1550,17 +1499,6 @@
 
     .proposito {
         display: none;
-        /*width: 55vw; 
-        height: 54px;
-        margin-left: -268px; 
-        margin-top: -17vh;
-        padding-left: 0px;
-        font-family: var(--fonte1);
-        font-size: 2vw;    
-        font-weight: 400;
-        font-style: normal;
-        line-height: 25px;
-        color: var(--cor5);*/
     }
 
     .agendeconsulta1 {
@@ -1574,6 +1512,7 @@
         border: none;
     }
 
+    /*Estilos para sessão procedimentos*/
     .conceito1, .conceito2, .conceito3,
     .conceito4, .conceito5, .conceito6,
     .conceito7 {
@@ -1594,6 +1533,7 @@
         color: var(--cor5);
     }
 
+    /*Estilos para sessão final*/
     h3 {
         font-family: var(--fonte3);
         font-weight: 400;
@@ -1631,6 +1571,7 @@
         border-radius: 10px;
     }
 
+    /*Estilos para rodapé*/
     aside#localizacao {
         display: block;
         position: relative;
@@ -1651,6 +1592,11 @@
 }
 
 @media screen and (min-width: 1220px){
+    #menu-mobile {
+        display: none;
+    }
+
+    /*Estilos para sessão inicial do main*/
     #sessaoprincipal {
         background-image: url(../imagens/perfil_original.png);
         background-repeat: no-repeat;
@@ -1659,16 +1605,12 @@
         margin-left: 350px;
     }
 
-    #menu-mobile {
-        display: none;
-    }
-
     .botao {
         margin-top: 25vh;
         margin-left: -76.5vw;
     }
 
-
+    /*Estilos para sessão procedimentos*/
     .conceito1, .conceito2, .conceito3,
     .conceito4, .conceito5, .conceito6,
     .conceito7 {

@@ -4,34 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page sobre trabalhos e serviços oferecidos pela Dra Júlia Gaspar, médica otorrinolaringologista e cirurgiã plástica">
+    <meta name="keywords" content="Rinoplastia, Dra. Júlia Gaspar, Otorrinolaringologista, Cirurgiã Plástica Facial, Blefaroplastia, Facelift, Otoplastia, Lobuloplastia, Mentoplastia, Toxina Botulínica, Procedimentos Estéticos, Saúde Facial, Qualidade de Vida, Agendamento de Consulta, CRM-SP 212523, RQE 119542">
+    <meta name="author" content="Paulo Renan Teixeira Araújo">
+    <meta name="robots" content="index, follow">
+
+    <!--Links para estilos CSS-->
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media_query.css">
     <link rel="stylesheet" href="estilos/swiper-bundle.min.css">
+
+    <!--Links para fontes provenientes do Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora&family=Inter&family=Hind+Vadodara&family=Open+Sans&family=Roboto:wght@700&family=Plus+Jakarta+Sans&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+
     <title>Dra. Júlia Gaspar</title>
 </head>
 <body>
     <header>
         <img id = logo src="imagens/logo.png" alt="logo da empresa">
         <img id = logo-cut src="imagens/logo_cut.png" alt="logo da empresa">
+
+        <!--Menu versão telas maiores-->
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
             menu
         </span>
@@ -42,6 +38,8 @@
             <a class="menu-item" href="#sessaofinal">Agendamentos</a>
         </nav>
     </header>
+
+    <!--Menu versão mobile-->
     <nav id="menu-mobile">
         <a class="menu-mobile-item" href="#sessaoprincipal">Home</a>
         <a class="menu-mobile-item" href="#sessaoespecialidades">Procedimentos</a>
@@ -50,6 +48,8 @@
     </nav>
 
     <main>
+
+        <!--Primeira Sessão-->
         <section id="sessaoprincipal">
             <h1>Júlia Gaspar</h1>
             <div id="prof">
@@ -62,10 +62,14 @@
             <br><br><br><br><br>   
             <p class="proposito">Meu propósito é ajudar você a ter mais saúde, qualidade de vida e autoestima!</p>
         </section>
+
+        <!--Segunda Sessão-->
         <section id="sessaoespecialidades" >
             <h2 class="subtitulo1">Procedimentos</h2>
             <p class="postitulo">Conheça os procedimentos e cirurgias que realizo.</p>
             <div class="slide-mobile">
+
+                <!--Cards para mobile-->
                 <div class="container">
                     <img class = imagemespecialidade src="imagens/especialidades1_mobile.png" alt="texto sobre blefaroplastia">
                     <p class="especialidade">Blefaroplastia</p>
@@ -176,10 +180,10 @@
                                 <div class="card-content">
                                     <p class="especialidade6">Mentoplastia</p>
                                     <p class="conceito6">Cirurgia plástica do mento (queixo), com o objetivo de melhorar a harmonia da face.</p>
-                                </div>
-                                <div class="card7 swiper-slide">
+                            </div>
+                            <div class="card7 swiper-slide">
                                     <div class="card-image">
-                                        <img class = imagemespecialidade-screen7 src="imagens/especialidades7.jpg" alt="texto sobre toxina botulínica">
+                                    <img class = imagemespecialidade-screen7 src="imagens/especialidades7.jpg" alt="texto sobre toxina botulínica">
                                     </div>
                                     <div class="card-content">
                                         <p class="especialidade7">Toxina Botulínica</p>
@@ -188,9 +192,13 @@
                             </div>
                         </div>
             </div>
+
+            <!--Botões para passar slides do swiper em telas maiores-->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </section>
+
+        <!--Terceira Sessão-->
         <section id="sessaofeedbacks">
             <h2 class="subtitulo2">Feedbacks</h2>
             <p class="postitulo">Veja o que os meus pacientes estão falando!</p>
@@ -221,6 +229,8 @@
                 </div>
             </div>
         </section>
+
+        <!--Quarta Sessão-->
         <section id="sessaofinal">
             <h3>Meu compromisso é com a sua qualidade de vida!</h3>
             <img id="fotofinal" src="imagens/foto_mobile.jpg" alt="foto de Dra Júlia Gaspar">
@@ -237,10 +247,13 @@
         </section>
     </main>
 
+    <!--Estrutura do Rodapé-->
     <div id="background-footer">
         <footer>
             <h4>Júlia Gaspar</h4>
             <p id="apresentacaomobile">Sou médica otorrinolaringologista, mestre em rinologia, pós-graduada em rinoplastia, e com fellowship em cirurgia plástica facial.</p>
+
+            <!--Apresentação para telas maiores-->
             <ul id="apresentacao">
                 <li>Médica otorrinolaringologista com residência médica realizada na Universidade Federal do Estado do Rio de Janeiro (UNIRIO).</li>
                 <li>Mestrado pela Universidade Federal de São Paulo (UNIFESP).</li>
@@ -276,150 +289,19 @@
                     <p id="endereco">R. Mato Grosso, 306 - sala 1406 - Higienópolis, SP</p>
                 </div>
             </a>
+
+            <!--Mapa do google maps-->
             <aside id="localizacao">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5069467995268!2d-46.65845361085031!3d-23.550229736475792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5831af5178b1%3A0x27d2d1394fb06a41!2sR.%20Mato%20Grosso%2C%20306%20-%20cj.1406%20-%20Higien%C3%B3polis%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001239-040!5e0!3m2!1spt-BR!2sbr!4v1703092607174!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </aside>
+
             <p id="rodape">Júlia Gaspar | CRM-SP: 212523  RQE: 119542</p>
             <br>
         </footer>
     </div>
 
+    <!--Links para Javascript-->
     <script src="js/swiper-bundle.min.js"></script>
-    <script>
-        function clickMenu() {
-            let menuMobile = document.getElementById('menu-mobile');
-                if (window.getComputedStyle(menuMobile).display === 'flex') {
-                menuMobile.style.display = 'none';
-                } else {
-                menuMobile.style.display = 'flex';
-            }
-        }
-
-
-        function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-
-    // Adiciona manipuladores de clique aos links do menu
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuLinks = document.querySelectorAll('#menu a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', function (event) {
-                event.preventDefault(); // Impede o comportamento padrão do link
-                const sectionId = link.getAttribute('href').substring(1);
-                scrollToSection(sectionId);
-            });
-        });
-    });
-
-
-
-
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.container');
-    
-        function showImage(index) {
-            images.forEach((image, i) => {
-                if (i === index) {
-                    image.classList.remove('remova');
-                } else {
-                    image.classList.add('remova');
-                }
-            });
-        }
-    
-        function proxImagem() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            showImage(currentIndex);
-        }
-    
-        function antImagem() {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
-        }
-
-        
-        
-        
-            let swiper = new Swiper(".slide-content", {
-            slidesPerView: 3.5,
-            centeredSlides: true,
-            spaceBetween: 25,
-            pagination: {
-            type: "fraction",
-            },
-            navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            },
-        });
-
-        let nextButton = document.querySelector(".swiper-button-next");
-        let prevButton = document.querySelector(".swiper-button-prev");
-
-        let nextClickCount = 0;
-        let prevClickCount = 0;
-
-        nextButton.addEventListener("click", function () {
-        nextClickCount++;
-
-            if (nextClickCount % 3 === 0) {
-            swiper.allowSlideNext = false;
-            nextButton.classList.add("swiper-button-disabled");
-            } else {
-                swiper.allowSlideNext = true;
-                nextButton.classList.remove("swiper-button-disabled");
-            }
-        });
-
-        prevButton.addEventListener("click", function () {
-        prevClickCount++;
-
-            if (prevClickCount % 3 === 0) {
-            swiper.allowSlideNext = true;
-            nextButton.classList.remove("swiper-button-disabled");
-        }
-    });
-
-
-
-
-
-
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            if (window.innerWidth <= 992) {
-                const comments = document.querySelectorAll('.caixacomentarios');
-                let currentIndex = 0;
-
-                function showComment(index) {
-                    comments.forEach((comment, i) => {
-                        if (i === index) {
-                            comment.classList.add('visivel');
-                        } else {
-                            comment.classList.remove('visivel');
-                }
-            });
-        }
-
-        function nextComment() {
-            comments[currentIndex].classList.remove('visivel');
-            currentIndex = (currentIndex + 1) % comments.length;
-            comments[currentIndex].classList.add('visivel');
-        }
-
-        setInterval(nextComment, 8000);
-    } else {
-        console.log ("Largura da tela é maior que 992px. Não executando o código Javascript para a Seção de Feedbacks.")
-    }
-    });
-
-
-    </script>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>

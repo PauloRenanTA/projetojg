@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*Fontes personalizadas*/
 @font-face {
     font-family: 'Handsome';
     src: url('../fontes/handsome-regular.ttf') format('truetype');
@@ -15,7 +16,7 @@
     src: url('../fontes/lust-slim.ttf') format('truetype');
 }
 
-/* Definição de estilos */
+/* Definição de estilos*/
 :root {
     --fonte1: 'Sora', sans-serif;
     --fonte2: 'Handsome', sans-serif;
