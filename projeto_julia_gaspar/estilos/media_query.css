@@ -430,7 +430,7 @@
 }
 
 /*Tablet*/
-@media screen and (min-width: 541px) and (max-width: 992px) {
+@media screen and (min-width: 541px) and (max-width: 991px) {
 
     /*Estilos para Cabeçalho*/
     header {
@@ -487,7 +487,7 @@
         color: var(--cor2);
         font-family:   var(--fonte2);
         font-weight: 400;
-        font-size: 9vw;
+        font-size: 8.5vw;
         line-height: 44px;
     }
     
@@ -499,25 +499,25 @@
     }
 
     .profissao {
-        width: 65vw;
+        width: 380px;
         height: 45px;
         font-family: var(--fonte1);
         font-weight: 600;
-        font-size: 3vw;
+        font-size: 15px;
         line-height: 28px;
         color: var(--cor3);
         padding: 0px 50px 0px 42px;
     }
 
     .registro {
-        width: 33vw;
+        width: 187px;
         margin-top: 2vh;
         margin-left: 43px;
         padding-top: 1vh;
         padding-left: 0px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
-        font-size: 2.3vw;
+        font-size: 13px;
         font-weight: 500;
         line-height: 19.36px;
         color: var(--cor5);
@@ -534,7 +534,7 @@
     }
 
     button {
-        width:  370px;
+        width:  290px;
         height: 40px;
         padding: 10px;
         border-radius: 10px;
@@ -550,7 +550,7 @@
         color: var(--cor7);
         font-family: var(--fonte1);
         font-weight: 600;
-        font-size: 2vw;
+        font-size: 15px;
         line-height: 17.64px;
         cursor: pointer;
     }
@@ -854,7 +854,6 @@
     }
 
     .iconetelefone, .numtelefone {
-        margin-top: 10px;
         margin-left: 12px;
     }
 
@@ -868,7 +867,6 @@
     }
     
     .iconemail, .email {
-        margin-top: 10px;
         margin-left: 12px;
     }
 
@@ -1027,7 +1025,7 @@
 
     .registro {
         width: 18vw; 
-        margin-top: 4vh;
+        margin-top: 10px;
         padding-top: 10px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
@@ -1291,7 +1289,7 @@
     .comentarios {
         font-family: var(--fonte5);
         font-weight: 500;
-        font-size: 1.2vw;
+        font-size: 20px;
         line-height: 25.49px;
         text-align: left;
         padding-right: 27px;
@@ -1403,6 +1401,7 @@
         width: 654px;
         padding-top: 18px;
         padding-left: 90px;
+        margin-bottom: 30px;
         color: var(--cor5);
     }
 
@@ -1411,9 +1410,7 @@
     }
 
     .iconetelefone, .numtelefone {
-        margin-top: 10px;
         margin-left: 60px;
-        padding-top: 18px;
     }
 
     .numtelefone {
@@ -1427,7 +1424,6 @@
     }
     
     .iconemail, .email {
-        margin-top: 1px;
         margin-left: 60px;
     }
 
@@ -1559,7 +1555,7 @@
 
     .registro {
         width: 18vw; 
-        margin-top: 4vh;
+        margin-top: 10px;
         padding-top: 10px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
@@ -1745,7 +1741,7 @@
 
     .registro {
         width: 220px; 
-        margin-top: 1.5vh;
+        margin-top: 10px;
         padding-top: 10px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
@@ -1813,7 +1809,7 @@
 
     .registro {
         width: 18vw; 
-        margin-top: 4.5vh;
+        margin-top: 30px;
         padding-top: 10px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
@@ -1961,9 +1957,20 @@
 
     .comentarios {
         line-height: 35px;
+        font-size: 25px;
     }
 
     .cliente {
         font-size: 25px;
+    }
+
+    #fotofinalfull {
+        display: block;
+        width: 270px;
+        height: 317px;
+        border-radius: 20px;
+        position: absolute;
+        left: 22vw;
+        top: -40px;
     }
 }
