@@ -44,6 +44,7 @@
         background-repeat: no-repeat;
         background-position: center right;
         background-size: cover;
+        height: 40vh;
         position: relative;
     }
 
@@ -131,6 +132,10 @@
         left: 20px;
     }
 
+    .agendeconsulta1, .agendeconsulta2 {
+        height: 35px;
+    }
+
     .slide-content {
         display: none;
     }
@@ -210,6 +215,7 @@
 
     #sessaofeedbacks {
         position: relative;
+        margin-bottom: 400px;
     }
 
     div.caixacomentarios {
@@ -278,13 +284,13 @@
         color: var(--cor3);
         padding-right: 3vw;
         padding-left: 40vw;
-        padding-top: 20px;
+        margin-top: -170px;
+        margin-bottom: 140px;
         position: relative;
         z-index: 1;
     }
 
     #paragfinal {
-        margin-top: 45px;
         text-align: left;
         padding-left: 20px;
         padding-right: 20px;
@@ -299,6 +305,7 @@
     .agendeconsulta2 {
         display: block;
         margin: auto;
+        text-decoration: none;
     }
 
     #fotofinal {
@@ -306,7 +313,7 @@
         height: 217px; 
         border-radius: 20px;
         margin-left: 17px;
-        margin-top: -90px;
+        margin-top: -30px;
     }
 
     #fotofinalfull {
@@ -423,7 +430,7 @@
 }
 
 /*Tablet*/
-@media screen and (min-width: 540px) and (max-width: 992px) {
+@media screen and (min-width: 541px) and (max-width: 992px) {
 
     /*Estilos para Cabeçalho*/
     header {
@@ -467,11 +474,11 @@
 
     /*Estilos sessão inicial do main*/
     #sessaoprincipal {
-        /*height: max-content;*/
         background-image: url(../imagens/perfil_full.png);
         background-repeat: no-repeat;
-        background-position: center right;
-        background-size: contain;
+        background-position: right right;
+        background-size: cover;
+        height: 300px;
         position: relative;
     }
 
@@ -480,7 +487,7 @@
         color: var(--cor2);
         font-family:   var(--fonte2);
         font-weight: 400;
-        font-size: 60px;
+        font-size: 9vw;
         line-height: 44px;
     }
     
@@ -499,7 +506,7 @@
         font-size: 3vw;
         line-height: 28px;
         color: var(--cor3);
-        padding: 0px 10px 0px 42px;
+        padding: 0px 50px 0px 42px;
     }
 
     .registro {
@@ -527,13 +534,14 @@
     }
 
     button {
-        width:  370px; /* 49vw;*/
-        height: 40px; /* 3.5vh;*/
+        width:  370px;
+        height: 40px;
         padding: 10px;
         border-radius: 10px;
         background-color: var(--cor6);
         border: none;
         cursor: pointer;
+        text-decoration: none;
     }
     
     a > button {
@@ -542,7 +550,7 @@
         color: var(--cor7);
         font-family: var(--fonte1);
         font-weight: 600;
-        font-size: 2vw; /*14px;*/
+        font-size: 2vw;
         line-height: 17.64px;
         cursor: pointer;
     }
@@ -652,6 +660,7 @@
     /*Estilos para a sessão feedbacks*/
     #sessaofeedbacks {
         position: relative;
+        margin-bottom: 400px;
     }
 
     div.caixacomentarios {
@@ -718,6 +727,57 @@
         padding-bottom: 100px;
     }
 
+    div.text-sessaofinal {
+        width: 50vw;
+        padding: 10px;
+        margin-top: -260px;
+        margin-left: 47vw;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    h3 {
+        font-family: var(--fonte3);
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 35px;
+        color: var(--cor3);
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    #paragfinal {
+        text-align: left;
+        font-family: var(--fonte6);
+        font-weight: 400;
+        font-size: 2.5vw;
+        line-height: 27px;
+        margin-bottom: 20px;
+        color: var(--cor5);
+    }
+
+    a > button {
+        text-align: center;
+    }
+
+    .agendeconsulta2 {
+        text-align: center;
+        width: 35vw;
+        text-decoration: none;
+    }
+
+    #fotofinalfull {
+        display: block;
+        width: 270px;
+        height: 317px;
+        border-radius: 20px;
+        margin-left: 2.5vw;
+        margin-top: -60px;
+    }
+/*
     h3 {
         font-family: var(--fonte3);
         font-weight: 400;
@@ -726,9 +786,7 @@
         color: var(--cor3);
         padding-right: 2vw;
         padding-left: 40vw;
-        padding-top: 20px;
         position: relative;
-        z-index: 1;
     }
 
     #paragfinal {
@@ -747,11 +805,9 @@
     .agendeconsulta2 {
         position: absolute;
         top: 220px;
-        left: 45vw;
-    }
-
-    #fotofinal {
-        display: none;
+        left: 39vw;
+        width: 55vw;
+        text-decoration: none;
     }
 
     #fotofinalfull {
@@ -760,7 +816,11 @@
         height: 317px;
         border-radius: 20px;
         margin-left: 2.5vw;
-        margin-top: -130px;
+        margin-top: -60px;
+    }*/
+
+    #fotofinal {
+        display: none;
     }
 
     #logo-whatsapp-instagram {
@@ -932,59 +992,56 @@
     }
 
     /*Estilos para sessão inicial do main*/
+    div.maintext {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 40px;
+        width: 560px;
+    }
+
     h1 {
-        margin: 0px 0px 0px -310px;
-        padding: 10vh 0px 10px 50px;
         color: var(--cor2);
         font-family:   var(--fonte2);
         font-weight: 400;
-        font-size: 6vw; 
+        font-size: 5.5vw; 
         font-style: normal;
         line-height: normal;
     }
-    
-    p {
-        font-family: var(--fonte1);
-        font-weight: 500;
-        font-size: 22px;
-        color: black;
+
+    #prof {
+        margin-top: 10px;
     }
 
     .profissao {
-        width: 65vw;
+        width: 32vw;
         height: 45px;
         font-family: var(--fonte1);
         font-weight: 600;
-        font-size:  1.8vw;/*1.8vw;*/
+        font-size:  1.5vw;
         font-style: normal;
         line-height: normal;
         color: var(--cor3);
-        margin: 0px 0px 22px -262px;
-        padding: 0px 399px 0px 0px;
     }
 
     .registro {
-        width: 19vw; 
-        margin-top: 3vh;
-        margin-left: -262px;
-        padding-top: 5px;
-        padding-left: 0px;
+        width: 18vw; 
+        margin-top: 4vh;
+        padding-top: 10px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
-        font-size: 1.3vw;   
+        font-size: 1.2vw;   
         font-weight: 400;
         line-height: 21.78px;
         color: var(--cor5);
     }
 
     .proposito {
-        width: 40vw; 
-        height: 54px;
-        margin-left: -262px; 
-        margin-top: -190px;
-        padding-left: 0px;
+        margin-top: 12vh;
+        width: 35vw;
         font-family: var(--fonte1);
-        font-size: 1.5vw;    
+        font-size: 1.3vw;    
         font-weight: 400;
         font-style: normal;
         line-height: normal;
@@ -992,19 +1049,21 @@
     }
 
     .botao {
-        display: flex;
-        justify-content: center;
-        margin-left: -79vw;
-        margin-top: 10vh;
+        margin-top: 15px;
     }
 
     .agendeconsulta1 {
-        width:  35vw; 
-        height: 40px; /*3.5vh;*/
+        width:  30vw; 
+        height: 40px;
         padding: 10px;
         border-radius: 10px;
         background-color: var(--cor6);
         border: none;
+    }
+
+    .agendeconsulta1:hover {
+        background-color: #e7c9a2;
+        transition: background-color 0.3s ease-out;
     }
 
     a > button {
@@ -1013,18 +1072,14 @@
         color: var(--cor7);
         font-family: var(--fonte1);
         font-weight: 600;
-        font-size: 1.5vw; /*14px;*/
+        font-size: 1.5vw;
         line-height: 17.64px;
         cursor: pointer;
     }
 
-    .agendeconsulta1:hover {
-        background-color: var(--cor2);
-        transition: color 2s ease-out;
-    }
-
     .agendeconsulta2:hover {
-        background-color: var(--cor2);
+        background-color: #e7c9a2;
+        transition: background-color 0.3s ease-out;
     }
 
     /*Estilos para sessão de procedimentos*/
@@ -1063,16 +1118,15 @@
 
     .slide-container {
         display: block;
-        max-width: 1030px;
+        max-width: 95vw;
         height: 500px;
-        width: 1050px;
-        background-color: var(--cor9);
+        width: 1000px;
         padding: 40px 0px;
         color: #fff;
     }
 
     .slide-content {
-        margin: 0px -330px 0px -650px;
+        margin: 0px -250px 0px -750px;
     }
 
     .card {
@@ -1114,7 +1168,7 @@
     .imagemespecialidade-screen {
         position: relative;
         height: 482px;
-        width: 22vw;
+        width: 290px;
         border-radius: 20px;
         margin-left: 40px;
         opacity: 0.7;
@@ -1123,7 +1177,7 @@
     .imagemespecialidade-screen7 {
         position: relative;
         height: 482px;
-        width: 22vw;
+        width: 290px;
         border-radius: 20px;
         margin-left: 40px;
         opacity: 0.7;
@@ -1133,57 +1187,56 @@
     .especialidade4, .especialidade5, .especialidade6, 
     .especialidade7 {
         font-family: var(--fonte3);
-        font-size: 2.2vw;
+        font-size: 30px;
         font-weight: 400;
         font-style: normal;
         line-height: normal;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: 40px;
+        margin-left: 30px;
         color: var(--cor5);
     }
 
     .especialidade1 {
         position: absolute;
         top: -135px;
-        left: 5.5vw;
+        left: 80px;
     }
 
     .especialidade2 {
         position: absolute;
         top: -135px;
-        left: 4.4vw;
+        left: 60px;
     }
 
     .especialidade3 {
         position: absolute;
         top: -135px;
-        left: 7.2vw;
+        left: 100px;
     }
 
     .especialidade4 {
         position: absolute;
         top: -135px;
-        left: 6vw;
+        left: 90px;
     }
 
     .especialidade5 {
         position: absolute;
         top: -135px;
-        left: 4.5vw;
+        left: 65px;
     }
 
     .especialidade6 {
         position: absolute;
         top: -135px;
-        left: 4.5vw;
+        left: 60px;
     }
 
     .especialidade7 {
         position: absolute;
         top: -135px;
-        left: 1.7vw;
+        left: 90px;
         text-align: center;
-        width: 18vw;
     }
 
     .conceito1, .conceito2, .conceito3,
@@ -1204,6 +1257,7 @@
     /*Estilos para sessão feedbacks*/
     #sessaofeedbacks {
         position: relative;
+        margin-bottom: 180px;
     }
 
     #comments {
@@ -1260,58 +1314,68 @@
 
     /*Estilos para sessão final*/
     #sessaofinal {
-        margin-top: 130px;
-        padding-bottom: 140px;
+        height: max-content;
+    }
+
+    div.text-sessaofinal {
+        display: none;
+    }
+
+    div.text-sessaofinal2 {
+        width: 700px;
+        height: 350px;
+        padding: 30px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 35vw;
     }
 
     h3 {
         font-family: var(--fonte3);
         font-weight: 400;
-        font-size: 42px;
-        font-style: normal;
-        line-height: 52.08px;
+        font-size: 40px;
+        line-height: 45px;
         color: var(--cor3);
-        width: 568px;
-        margin-left: 600px;
-        padding-top: 50px;
-        position: relative;
-        z-index: 1;
+        text-align: left;
+        margin-bottom: 20px;
     }
 
-    #paragfinal {
-        text-align: left;
-        width: 606px;
-        margin-top: -190px;
-        margin-left: 600px;
-        margin-bottom: 25px;
+    #paragfinal2 {
         font-family: var(--fonte6);
         font-weight: 400;
-        font-size: 24px;
-        font-style: normal;
-        line-height: 32.68px;
+        font-size: 25px;
+        line-height: 27px;
+        margin-bottom: 20px;
         color: var(--cor5);
     }
 
-    .agendeconsulta2 {
-        position: absolute;
-        top: 300px;
-        left: 700px;
-        width: 385px;
-        height: 52px;
-        border-radius: 10px;
+    a > button {
+        text-align: center;
     }
 
-    #fotofinal {
-        display: none;
+    .agendeconsulta2 {
+        border-radius: 10px;
+        text-align: center;
+        width: 400px;
+        height: 50px;
+        text-decoration: none;
+        font-size: 20px;
     }
 
     #fotofinalfull {
         display: block;
-        width: 337px;
-        height: 402px;
+        width: 270px;
+        height: 317px;
         border-radius: 20px;
-        margin-left: 14vw;
-        margin-top: -195px;
+        position: absolute;
+        left: 14vw;
+        top: -40px;
+    }
+
+    #fotofinal {
+        display: none;
     }
 
     #logo-whatsapp-instagram {
@@ -1384,8 +1448,8 @@
         height: 240px;
         background: #fff;
         border-radius: 20px;
-        margin-left: 700px;
-        margin-top: -220px;
+        margin-left: 60vw;
+        margin-top: -260px;
         margin-bottom: 60px;
     }
 
@@ -1453,63 +1517,101 @@
     #sessaoprincipal {
         background-image: url(../imagens/perfil_original.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        height: 60vh;
-        margin-left: 350px;
+        background-size: contain;
+        background-position: right center;
+        max-width: 100vw;
+        height: 600px;
+        padding-left: 80px;
+    }
+
+    div.maintext {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 40px;
+        width: 550px;
     }
 
     h1 {
-        margin: 0px 0px 0px -320px;
-        padding: 5vh 0px 10px 50px;
         color: var(--cor2);
         font-family:   var(--fonte2);
         font-weight: 400;
-        font-size: 8vw; 
+        font-size: 5.5vw; 
         font-style: normal;
         line-height: normal;
+    }
+
+    #prof {
+        margin-top: 10px;
     }
 
     .profissao {
-        width: 75vw;
-        height: 10px;
+        width: 32vw;
+        height: 45px;
         font-family: var(--fonte1);
         font-weight: 600;
-        font-size:  2.5vw;
+        font-size:  1.5vw;
         font-style: normal;
         line-height: normal;
         color: var(--cor3);
-        margin: 0px 0px 22px -270px;
-        padding: 2vh 399px 0px 0px;
     }
 
     .registro {
-        width: 25vw; 
-        margin-top: 15vh;
-        margin-left: -268px;
-        padding-top: 6px;
-        padding-left: 0px;
+        width: 18vw; 
+        margin-top: 4vh;
+        padding-top: 10px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
-        font-size: 1.7vw;   
+        font-size: 1.2vw;   
         font-weight: 400;
         line-height: 21.78px;
         color: var(--cor5);
     }
 
     .proposito {
-        display: none;
+        margin-top: 12vh;
+        width: 35vw;
+        font-family: var(--fonte1);
+        font-size: 1.3vw;    
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: var(--cor5);
+    }
+
+    .botao {
+        margin-top: 15px;
     }
 
     .agendeconsulta1 {
-        width:  35vw; 
+        width:  30vw; 
         height: 40px;
-        margin-left: 0px;
-        margin-top: -18vh;
         padding: 10px;
         border-radius: 10px;
         background-color: var(--cor6);
         border: none;
+    }
+
+    .agendeconsulta1:hover {
+        background-color: #e7c9a2;
+        transition: background-color 0.3s ease-out;
+    }
+
+    a > button {
+        text-decoration: none;
+        text-align: center;
+        color: var(--cor7);
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size: 1.5vw;
+        line-height: 17.64px;
+        cursor: pointer;
+    }
+
+    .agendeconsulta2:hover {
+        background-color: #e7c9a2;
+        transition: background-color 0.3s ease-out;
     }
 
     /*Estilos para sessão procedimentos*/
@@ -1518,8 +1620,7 @@
     .conceito7 {
         position: absolute;
         top: 210px;
-        left: 1vw;
-        width: 20vw;
+        left: 10px;
         text-align: center;
         font-family: var(--fonte1);
         font-size: 1.4vw;
@@ -1534,41 +1635,61 @@
     }
 
     /*Estilos para sessão final*/
+    div.text-sessaofinal {
+        display: none;
+    }
+
+    div.text-sessaofinal2 {
+        width: 500px;
+        height: 350px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 35vw;
+    }
+
     h3 {
         font-family: var(--fonte3);
         font-weight: 400;
-        font-size: 32px;
-        font-style: normal;
-        line-height: 45px;
+        font-size: 2.5vw;
+        line-height: 35px;
         color: var(--cor3);
-        width: 450px;
-        margin-left: 520px;
-        padding-top: 50px;
-        position: relative;
-        z-index: 1;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
-    #paragfinal {
-        text-align: left;
-        width: 450px;
-        margin-top: -190px;
-        margin-left: 520px;
-        margin-bottom: 25px;
+    #paragfinal2 {
         font-family: var(--fonte6);
         font-weight: 400;
-        font-size: 1.4vw;
-        font-style: normal;
-        line-height: 32.68px;
+        font-size: 2vw;
+        line-height: 27px;
+        margin-bottom: 15px;
         color: var(--cor5);
     }
 
+    a > button {
+        text-align: center;
+    }
+
     .agendeconsulta2 {
-        position: absolute;
-        top: 240px;
-        left: 550px;
-        width: 385px;
-        height: 52px;
         border-radius: 10px;
+        text-align: center;
+        width: 35vw;
+        height: 50px;
+        text-decoration: none;
+    }
+
+    #fotofinalfull {
+        display: block;
+        width: 270px;
+        height: 317px;
+        border-radius: 20px;
+        position: absolute;
+        left: 30px;
+        top: -40px;
     }
 
     /*Estilos para rodapé*/
@@ -1600,14 +1721,38 @@
     #sessaoprincipal {
         background-image: url(../imagens/perfil_original.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 90vh;
-        margin-left: 350px;
+        background-size: contain;
+        background-position: center right;
+        max-width: 100vw;
+        height: 600px;
+        padding-left: 120px;
     }
 
-    .botao {
-        margin-top: 25vh;
-        margin-left: -76.5vw;
+    #prof {
+        margin-top: 20px;
+    }
+
+    .profissao {
+        width: 400px;
+        height: 45px;
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size:  20px;
+        font-style: normal;
+        line-height: normal;
+        color: var(--cor3);
+    }
+
+    .registro {
+        width: 220px; 
+        margin-top: 1.5vh;
+        padding-top: 10px;
+        border-top: 0.1em solid #000;
+        font-family: var(--fonte4);
+        font-size: 15px;   
+        font-weight: 400;
+        line-height: 21.78px;
+        color: var(--cor5);
     }
 
     /*Estilos para sessão procedimentos*/
@@ -1616,11 +1761,10 @@
     .conceito7 {
         position: absolute;
         top: 210px;
-        left: 1vw;
-        width: 20vw;
+        left: 10px;
         text-align: center;
         font-family: var(--fonte1);
-        font-size: 1.3vw;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -1629,5 +1773,197 @@
 
     .swiper-button-next, .swiper-button-prev {
         color: var(--cor5);
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #sessaoprincipal {
+        background-image: url(../imagens/perfil_original.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right;
+        max-width: 100vw;
+        height: 700px;
+        padding-left: 120px;
+    }
+
+    h1 {
+        color: var(--cor2);
+        font-family:   var(--fonte2);
+        font-weight: 400;
+        font-size: 110px; 
+        font-style: normal;
+        line-height: normal;
+    }
+
+    #prof {
+        margin-top: 20px;
+    }
+
+    .profissao {
+        width: 20vw;
+        height: 45px;
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size:  1.2vw;
+        font-style: normal;
+        line-height: normal;
+        color: var(--cor3);
+    }
+
+    .registro {
+        width: 18vw; 
+        margin-top: 4.5vh;
+        padding-top: 10px;
+        border-top: 0.1em solid #000;
+        font-family: var(--fonte4);
+        font-size: 1.2vw;   
+        font-weight: 400;
+        line-height: 21.78px;
+        color: var(--cor5);
+    }
+
+    .botao {
+        margin-top: 15px;
+    }
+
+    .agendeconsulta1 {
+        width:  30vw; 
+        height: 70px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--cor6);
+        border: none;
+    }
+
+    #sessaoespecialidades {
+        background-color: var(--cor9);
+        background-size: cover;
+        height: 750px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        padding-top: 25px;
+        font-family: var(--fonte1);
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 30.24px;
+        text-align: center;
+        color: var(--cor8);
+    }
+
+    .postitulo {
+        margin-bottom: 20px;
+        margin-left: 48px;
+        margin-right: 48px;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 22.68px;
+        text-align: center;
+        color: var(--cor5);
+    }
+
+    .especialidade1, .especialidade2, .especialidade3, 
+    .especialidade4, .especialidade5, .especialidade6, 
+    .especialidade7 {
+        font-family: var(--fonte3);
+        font-size: 40px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-left: 30px;
+        color: var(--cor5);
+    }
+
+    .especialidade1 {
+        position: absolute;
+        top: -135px;
+        left: 60px;
+    }
+
+    .especialidade2 {
+        position: absolute;
+        top: -135px;
+        left: 30px;
+    }
+
+    .especialidade3 {
+        position: absolute;
+        top: -135px;
+        left: 90px;
+    }
+
+    .especialidade4 {
+        position: absolute;
+        top: -135px;
+        left: 70px;
+    }
+
+    .especialidade5 {
+        position: absolute;
+        top: -135px;
+        left: 35px;
+    }
+
+    .especialidade6 {
+        position: absolute;
+        top: -135px;
+        left: 40px;
+    }
+
+    .especialidade7 {
+        position: absolute;
+        top: -135px;
+        left: 60px;
+        text-align: center;
+    }
+
+    .conceito1, .conceito2, .conceito3,
+    .conceito4, .conceito5, .conceito6 {
+        position: absolute;
+        top: 80px;
+        left: 10px;
+        text-align: center;
+        font-family: var(--fonte1);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--cor5);
+    }
+
+    .conceito7 {
+        position: absolute;
+        top: 80px;
+        left: 10px;
+        text-align: center;
+        font-family: var(--fonte1);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--cor5);
+    }
+
+    div.caixacomentarios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 32em;
+        height: 27em;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.185);
+        margin-top: 50px;
+        padding: 20px 5px 40px 30px;
+    }
+
+    .comentarios {
+        line-height: 35px;
+    }
+
+    .cliente {
+        font-size: 25px;
     }
 }

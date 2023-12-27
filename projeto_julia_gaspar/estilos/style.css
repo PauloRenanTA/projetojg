@@ -52,14 +52,19 @@ p {
 }
 
 button {
-    width: 50vw; /*210px;*/
-    height: 5vh; /*48px;*/
+    width: 50vw;
+    height: 5vh;
     padding: 10px;
-    margin-top: 8px;
+    /*margin-top: 8px;*/
     border-radius: 20px;
     background-color: var(--cor6);
     border: none;
     cursor: pointer;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 a > button {
@@ -104,8 +109,12 @@ h2 {
     background-color: var(--cor9);
     background-size: cover;
     height: max-content;
-    margin-top: 370px;
+    padding-bottom: 20px;
     position: relative;
+}
+
+div.text-sessaofinal2 {
+    display: none;
 }
 
 footer {
