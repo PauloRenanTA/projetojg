@@ -40,7 +40,7 @@
 @media screen and (max-width:540px) {
     #sessaoprincipal {
         height: max-content;
-        background-image: url(../imagens/perfil.png);
+        background-image: url(../imagens/perfil.webp);
         background-repeat: no-repeat;
         background-position: center right;
         background-size: cover;
@@ -474,7 +474,7 @@
 
     /*Estilos sessão inicial do main*/
     #sessaoprincipal {
-        background-image: url(../imagens/perfil_full.png);
+        background-image: url(../imagens/perfil_full.webp);
         background-repeat: no-repeat;
         background-position: right right;
         background-size: cover;
@@ -1511,7 +1511,7 @@
 
     /*Estilos para sessão inicial do main*/
     #sessaoprincipal {
-        background-image: url(../imagens/perfil_original.png);
+        background-image: url(../imagens/perfil_original.webp);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right center;
@@ -1715,7 +1715,7 @@
 
     /*Estilos para sessão inicial do main*/
     #sessaoprincipal {
-        background-image: url(../imagens/perfil_original.png);
+        background-image: url(../imagens/perfil_original.webp);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center right;
@@ -1774,7 +1774,7 @@
 
 @media screen and (min-width: 2000px) {
     #sessaoprincipal {
-        background-image: url(../imagens/perfil_original.png);
+        background-image: url(../imagens/perfil_original.webp);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center right;
