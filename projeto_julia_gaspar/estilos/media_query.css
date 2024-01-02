@@ -1215,7 +1215,6 @@
     /*Estilos para sessão feedbacks*/
     #sessaofeedbacks {
         position: relative;
-        margin-bottom: 180px;
     }
 
     #comments {
@@ -1273,6 +1272,7 @@
     /*Estilos para sessão final*/
     #sessaofinal {
         height: max-content;
+        margin-top: 180px;
     }
 
     div.text-sessaofinal {
