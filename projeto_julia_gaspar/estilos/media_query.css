@@ -279,10 +279,10 @@
     h3 {
         font-family: var(--fonte3);
         font-weight: 400;
-        font-size: 5vw;
+        font-size: 4.2vw;
         line-height: 24.8px;
         color: var(--cor3);
-        padding-right: 3vw;
+        padding-right: 2vw;
         padding-left: 40vw;
         margin-top: -170px;
         margin-bottom: 140px;
@@ -1249,7 +1249,7 @@
     .comentarios {
         font-family: var(--fonte5);
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 25.49px;
         text-align: left;
         padding-right: 27px;
