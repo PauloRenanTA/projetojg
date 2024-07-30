@@ -26,10 +26,10 @@
     --fonte6: 'Open Sans', sans-serif;
     --cor1: #4C3735;
     --cor2: #A56442;
-    --cor3: #3B6B27;
+    --cor3: #FF9B8F;
     --cor4: #EDE5D2;
     --cor5: #000;
-    --cor6: #E7D3B9;
+    --cor6: #911D40;
     --cor7: #331B3B;
     --cor8: #513D38;
     --cor9: #FCF9F5;
@@ -40,32 +40,29 @@
 @media screen and (max-width:540px) {
     #sessaoprincipal {
         height: max-content;
-        background-image: url(../imagens/perfil.webp);
+        background-image: url(../imagens/perfil_original.webp);
         background-repeat: no-repeat;
         background-position: center right;
-        background-size: cover;
-        height: 40vh;
+        background-size: contain;
+        height: 35vh;
+        margin-top: 30px;
         position: relative;
     }
 
     header {
-        background-color: var(--cor6);
+        background-color: var(--cor3);
         height: 67px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0vh 8vw 0vh 2vw;
-    }
-
-    #logo-cut {
-        display: none;
+        padding: 0vh 8vw 0vh 5vw;
     }
 
     #logo {
         display: block;
-        width: 60px;
-        height: 60px;
+        /*width: 60px;
+        height: 60px;*/
     }
 
     #menu {
@@ -76,7 +73,7 @@
         display: none;
         flex-direction: column;
         align-items: flex-end;
-        background-color: var(--cor6);
+        background-color: var(--cor3);
     }
 
     .menu-mobile-item {
@@ -87,35 +84,35 @@
         color: var(--cor5);
     }
 
-    h1 {
+    /*h1 {
         padding: 30px 0px 30px 25px;
         color: var(--cor2);
         font-family:   var(--fonte2);
         font-weight: 400;
         font-size: 10vw;
         line-height: 44px;
-    }
+    }*/
 
     .profissao {
-        width: 68vw;
+        width: 70vw;
         height: 45px;
         font-family: var(--fonte1);
         font-weight: 600;
-        font-size: 3.9vw;
+        font-size: 3.5vw;
         line-height: 22.68px;
-        color: var(--cor3);
-        padding: 0px 10px 0px 10px;
+        color: var(--cor5);
+        padding: 0px 10px 0px 20px;
         margin-bottom: 1vh;
     }
 
     .registro {
-        margin-left: 10px;
+        margin-left: 20px;
         margin-top: 1vh;
         padding-top: 0.5vh;
         border-top: 0.1em solid #000;
-        width: 44vw;
+        width: 50vw;
         font-family: var(--fonte4);
-        font-size: 3vw;
+        font-size: 3.4vw;
         font-weight: 500;
         line-height: 19.36px;
         color: var(--cor5);
@@ -128,12 +125,21 @@
 
     .botao {
         position: absolute;
-        top: 190px;
+        top: 150px;
         left: 20px;
     }
 
     .agendeconsulta1, .agendeconsulta2 {
-        height: 35px;
+        height: 45px;
+        color: var(--cor9);
+    }
+
+    .postitulodesktop1 {
+        display: none;
+    }
+
+    .postitulodesktop2 {
+        display: none;
     }
 
     .slide-content {
@@ -218,18 +224,24 @@
         margin-bottom: 400px;
     }
 
+    #commentsdesktop {
+        display: none;
+    }
+
     div.caixacomentarios {
         position: absolute;
         top: 90px;
         left: 0;
         opacity: 0;
         transition: opacity 1s ease-in-out;
-        height: 36vh;
-        box-shadow: 2.5px 0px 1px rgba(0, 0, 0, 0.055);
+        height: 45vh;
+        box-shadow: 0.5px 3px 1px 3px rgba(0, 0, 0, 0.055);
+        border-radius: 20px;
         margin-right: 30px;
-        margin-left: 40px;
+        margin-left: 30px;
         margin-top: 20px;
         padding-top: 15px;
+        padding-left: 30px;
     }
     
     .caixacomentarios.visivel {
@@ -258,7 +270,8 @@
         font-size: 4.5vw;
         line-height: 3vh;
         text-align: left;
-        padding-right: 27px;
+        padding-right: 20px;
+        padding-left: 10px;
         padding-top: 30px;
         color: var(--cor7);
     }
@@ -273,15 +286,19 @@
     }
 
     span.trav {
-        color: var(--cor2);
+        color: var(--cor6);
     } 
+
+    #acompanhe {
+        display: none;
+    }
 
     h3 {
         font-family: var(--fonte3);
         font-weight: 400;
         font-size: 4.2vw;
         line-height: 24.8px;
-        color: var(--cor3);
+        color: var(--cor6);
         padding-right: 2vw;
         padding-left: 40vw;
         margin-top: -170px;
@@ -308,7 +325,7 @@
         text-decoration: none;
     }
 
-    #fotofinal {
+    video {
         width:  194px; 
         height: 217px; 
         border-radius: 20px;
@@ -316,9 +333,9 @@
         margin-top: -30px;
     }
 
-    #fotofinalfull {
+    /*#fotofinalfull {
         display: none;
-    }
+    }*/
 
     #logo-whatsapp-instagram {
         margin-left: 3vw;
@@ -335,6 +352,11 @@
         padding-bottom: 60px;
     }
 
+    footer {
+        background-color: var(--cor3);
+        height: max-content;
+    }
+
     h4 {
         font-family: var(--fonte1);
         font-weight: 500;
@@ -345,7 +367,7 @@
         color: var(--cor5);
     }
 
-    p#apresentacaomobile {
+    /*p#apresentacaomobile {
         font-family: var(--fonte1);
         font-weight: 500;
         font-size: 14px;
@@ -354,10 +376,20 @@
         padding-left: 12px;
         padding-right: 46px;
         color: var(--cor5);
-    }
+    }*/
 
     ul#apresentacao {
-        display: none;
+        display: block;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 13px;
+        font-style: normal;
+        line-height: normal;
+        width: 92vw;
+        padding-top: 18px;
+        padding-left: 25px;
+        margin-bottom: 15px;
+        color: var(--cor5);
     }
 
     .iconetelefone, .numtelefone {
@@ -434,7 +466,7 @@
 
     /*Estilos para Cabeçalho*/
     header {
-        background-color: var(--cor6);
+        background-color: var(--cor3);
         height: 67px;
         display: flex;
         flex-direction: row;
@@ -443,14 +475,11 @@
         padding: 0vh 8vw 0vh 2vw;
     }
 
-    #logo-cut {
-        display: none;
-    }
-
     #logo {
         display: block;
-        width: 60px;
-        height: 60px;
+        margin-left: 8vw;
+        /*width: 60px;
+        height: 60px;*/
     }
 
     #menu {
@@ -461,7 +490,7 @@
         display: none;
         flex-direction: column;
         align-items: flex-end;
-        background-color: var(--cor6);
+        background-color: var(--cor3);
     }
 
     .menu-mobile-item {
@@ -474,22 +503,24 @@
 
     /*Estilos sessão inicial do main*/
     #sessaoprincipal {
-        background-image: url(../imagens/perfil_full.webp);
+        background-image: url(../imagens/perfil_original.webp);
         background-repeat: no-repeat;
-        background-position: right right;
-        background-size: cover;
+        background-position: right center;
+        background-size: contain;
         height: 300px;
-        position: relative;
+        width: 87vw;
+        margin-top: 30px;
+        margin-left: 70px;  
     }
 
-    h1 {
+    /*h1 {
         padding: 40px 0px 40px 50px;
         color: var(--cor2);
         font-family:   var(--fonte2);
         font-weight: 400;
         font-size: 8.5vw;
         line-height: 44px;
-    }
+    }*/
     
     p {
         font-family: var(--fonte1);
@@ -499,22 +530,22 @@
     }
 
     .profissao {
-        width: 380px;
+        width: 320px;
         height: 45px;
         font-family: var(--fonte1);
         font-weight: 600;
         font-size: 15px;
         line-height: 28px;
-        color: var(--cor3);
-        padding: 0px 50px 0px 42px;
+        color: var(--cor5);
+        margin-top: 15px;
+        padding: 0px 0px 0px 14px;
     }
 
     .registro {
         width: 187px;
         margin-top: 2vh;
-        margin-left: 43px;
+        margin-left: 14px;
         padding-top: 1vh;
-        padding-left: 0px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
         font-size: 13px;
@@ -525,18 +556,20 @@
 
     .proposito {
         display: none;
-        margin-top: 11vh
+        /*margin-top: 11vh*/
     }
-    .botao {
+    /*.botao {
         position: absolute;
         top: 230px;
         left: 43px;
-    }
+    }*/
 
     button {
-        width:  290px;
+        width:  35vw;
         height: 40px;
-        padding: 10px;
+        margin-left: 14px;
+        margin-top: 50px;
+        /*padding: 10px;*/
         border-radius: 10px;
         background-color: var(--cor6);
         border: none;
@@ -547,7 +580,7 @@
     a > button {
         text-decoration: none;
         text-align: center;
-        color: var(--cor7);
+        color: var(--cor9);
         font-family: var(--fonte1);
         font-weight: 600;
         font-size: 15px;
@@ -577,6 +610,14 @@
         line-height: 22.68px;
         text-align: center;
         color: var(--cor5);
+    }
+
+    .postitulodesktop1 {
+        display: none;
+    }
+
+    .postitulodesktop2 {
+        display: none;
     }
 
     .slide-content {
@@ -663,18 +704,24 @@
         margin-bottom: 400px;
     }
 
+    #commentsdesktop {
+        display: none;
+    }
+
     div.caixacomentarios {
         position: absolute;
         top: 90px;
         left: 0;
         opacity: 0;
         transition: opacity 1s ease-in-out;
-        height: 15em;
-        box-shadow: 2.5px 0px 1px rgba(0, 0, 0, 0.055);
+        height: 47vh;
+        box-shadow: 0.5px 3px 1px 3px rgba(0, 0, 0, 0.151);
+        border-radius: 20px;
         margin-right: 90px;
         margin-left: 80px;
         margin-top: 20px;
-        padding-top: 15px;
+        padding-top: 25px;
+        padding-left: 30px;
     }
     
     .caixacomentarios.visivel {
@@ -718,7 +765,11 @@
     }
 
     span.trav {
-        color: var(--cor2);
+        color: var(--cor6);
+    }
+
+    #acompanhe {
+        display: none;
     }
 
     /*Estilos para sessão final*/
@@ -744,7 +795,7 @@
         font-weight: 400;
         font-size: 3vw;
         line-height: 35px;
-        color: var(--cor3);
+        color: var(--cor6);
         text-align: left;
         margin-bottom: 20px;
     }
@@ -765,11 +816,12 @@
 
     .agendeconsulta2 {
         text-align: center;
+        color: var(--cor9);
         width: 35vw;
         text-decoration: none;
     }
 
-    #fotofinalfull {
+    video {
         display: block;
         width: 270px;
         height: 317px;
@@ -778,9 +830,9 @@
         margin-top: -60px;
     }
 
-    #fotofinal {
+    /*#fotofinal {
         display: none;
-    }
+    }*/
 
     #logo-whatsapp-instagram {
         display: none;
@@ -797,7 +849,7 @@
         color: var(--cor5);
     }
 
-    p#apresentacaomobile {
+    /*p#apresentacaomobile {
         font-family: var(--fonte1);
         font-weight: 500;
         font-size: 18px;
@@ -807,10 +859,20 @@
         padding-right: 60px;
         margin-bottom: 15px;
         color: var(--cor5);
-    }
+    }*/
 
     ul#apresentacao {
-        display: none;
+        display: block;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 13px;
+        font-style: normal;
+        line-height: normal;
+        width: 92vw;
+        padding-top: 18px;
+        padding-left: 25px;
+        margin-bottom: 30px;
+        color: var(--cor5);
     }
 
     .iconetelefone, .numtelefone {
@@ -878,7 +940,7 @@
     }
     
     footer {
-        background-color: var(--cor6);
+        background-color: var(--cor3);
         height: max-content;
     }
     
@@ -900,7 +962,7 @@
 @media screen and (min-width: 992px) {
     /*Estilos para cabeçalho*/
     header {
-        background-color: var(--cor6);
+        background-color: var(--cor3);
         height: 67px;
         display: flex;
         flex-direction: row;
@@ -910,13 +972,8 @@
     }
 
     #logo {
-        display: none;
-    }
-
-    #logo-cut {
         display: block;
-        width: 60px;
-        height: 60px;
+        padding-top: 1vh; 
     }
 
     #burguer {
@@ -936,6 +993,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 22.68px;
+        margin-right: 80px;
     }
     
     .menu-item {
@@ -949,6 +1007,29 @@
         transition: color 0.2s ease-out;
     }
 
+    #antepenultimomenuitem {
+        padding-right: 3px;
+    }
+
+    #penultimomenuitem {
+        padding-right: 18px;
+    }
+
+    #ultimomenuitem {
+        background-color: var(--cor6);
+        padding: 5px 15px 5px 0px;
+        border-radius: 10px;
+    }
+
+    #ultimomenuitem:hover {
+        background-color: #911d40d2;
+        transition: background-color 0.2s ease-out;
+    }
+
+    #ultimomenuitem .menu-item {
+        color: #fff;
+    }
+
     /*Estilos para sessão inicial do main*/
     div.maintext {
         display: flex;
@@ -959,14 +1040,14 @@
         width: 560px;
     }
 
-    h1 {
+    /*h1 {
         color: var(--cor2);
         font-family:   var(--fonte2);
         font-weight: 400;
         font-size: 5.5vw; 
         font-style: normal;
         line-height: normal;
-    }
+    }*/
 
     #prof {
         margin-top: 10px;
@@ -980,7 +1061,7 @@
         font-size:  1.5vw;
         font-style: normal;
         line-height: normal;
-        color: var(--cor3);
+        color: var(--cor5);
     }
 
     .registro {
@@ -996,10 +1077,10 @@
     }
 
     .proposito {
-        margin-top: 12vh;
-        width: 35vw;
+        margin-top: 8vh;
+        width: 36vw;
         font-family: var(--fonte1);
-        font-size: 1.3vw;    
+        font-size: 1.5vw;    
         font-weight: 400;
         font-style: normal;
         line-height: normal;
@@ -1007,21 +1088,23 @@
     }
 
     .botao {
-        margin-top: 15px;
+        margin-top: 10px;
+        margin-bottom: 45px;
     }
 
     .agendeconsulta1 {
-        width:  30vw; 
-        height: 40px;
+        width:  40vw; 
+        height: 70px;
         padding: 10px;
         border-radius: 10px;
         background-color: var(--cor6);
         border: none;
+        color: var(--cor9);
     }
 
     .agendeconsulta1:hover {
-        background-color: #e7c9a2;
-        transition: background-color 0.3s ease-out;
+        background-color: #911d40d2;
+        transition: background-color 0.2s ease-out;
     }
 
     a > button {
@@ -1036,13 +1119,13 @@
     }
 
     .agendeconsulta2:hover {
-        background-color: #e7c9a2;
+        background-color: #911d40d2;
         transition: background-color 0.3s ease-out;
     }
 
     /*Estilos para sessão de procedimentos*/
     h2 {
-        margin-bottom: 8px;
+        margin-bottom: 20px;
         padding-top: 45px;
         font-family: var(--fonte1);
         font-weight: 600;
@@ -1052,22 +1135,39 @@
         color: var(--cor8);
     }
 
+    .subtitulo1 {
+        text-align: right;
+        margin-right: 140px;
+    }
+
     .postitulo {
-        margin-bottom: 20px;
-        margin-left: 48px;
-        margin-right: 48px;
+        display: none;
+    }
+
+    .postitulodesktop1 {
+        display: block;
+        width: 50vw;
+        margin-bottom: 10px;
+        margin-left: 38vw;
         font-family: var(--fonte1);
         font-weight: 400;
-        font-size: 20px;
-        line-height: 22.68px;
-        text-align: center;
+        font-size: 22px;
+        line-height: 27.72px;
+        text-align: right;
         color: var(--cor5);
+    }
+
+    #linha1 {
+        width: 55vw;
+        margin-left: 33vw;
+        margin-bottom: 50px;
+        border-top: 1px solid #000;
     }
 
     #sessaoespecialidades {
         background-color: var(--cor9);
         background-size: cover;
-        height: 652px;
+        height: 796px;
     }
 
     .slide-mobile {
@@ -1217,7 +1317,36 @@
         position: relative;
     }
 
+    .subtitulo2 {
+        text-align: left;
+        margin-left: 3vw;
+    }
+
+    .postitulodesktop2 {
+        display: block;
+        width: 608px;
+        margin-bottom: 10px;
+        margin-left: 3vw;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27.72px;
+        text-align: left;
+        color: var(--cor5);
+    }
+
+    #linha2 {
+        max-width: 55vw;
+        margin-left: 3vw;
+        margin-bottom: 20px;
+        border-top: 1px solid #000;
+    }
+
     #comments {
+        display: none;
+    }
+
+    #commentsdesktop {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1225,15 +1354,20 @@
         align-items: center;
     }
 
-    div.caixacomentarios {
+    #caixacomentarios1, #caixacomentarios2, #caixacomentarios3, #caixacomentarios4, #caixacomentarios5, #caixacomentarios6 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 24em;
         height: 19em;
-        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.185);
+        box-shadow: 0px 1px 17px 1px rgba(0, 0, 0, 0.185);
         margin-top: 50px;
         padding: 20px 5px 40px 30px;
+        border-radius: 20px;
+    }
+
+    #caixacomentarios2, #caixacomentarios5 {
+        background-color: var(--cor3);
     }
 
     .aspas {
@@ -1266,7 +1400,20 @@
     }
 
     span.trav {
-        color: var(--cor2);
+        color: var(--cor6);
+    }
+
+    p#acompanhe>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25.2px;
+        color: var(--cor5);
     }
 
     /*Estilos para sessão final*/
@@ -1295,7 +1442,7 @@
         font-weight: 400;
         font-size: 40px;
         line-height: 45px;
-        color: var(--cor3);
+        color: var(--cor6);
         text-align: left;
         margin-bottom: 20px;
     }
@@ -1316,13 +1463,14 @@
     .agendeconsulta2 {
         border-radius: 10px;
         text-align: center;
+        color: var(--cor9);
         width: 400px;
         height: 50px;
         text-decoration: none;
         font-size: 20px;
     }
 
-    #fotofinalfull {
+    video {
         display: block;
         width: 270px;
         height: 317px;
@@ -1332,9 +1480,9 @@
         top: -40px;
     }
 
-    #fotofinal {
+    /*#fotofinal {
         display: none;
-    }
+    }*/
 
     #logo-whatsapp-instagram {
         display: none;
@@ -1365,9 +1513,9 @@
         color: var(--cor5);
     }
 
-    #apresentacaomobile {
+    /*#apresentacaomobile {
         display: none;
-    }
+    }*/
 
     .iconetelefone, .numtelefone {
         margin-left: 60px;
@@ -1432,6 +1580,8 @@
         color: var(--cor5);
         text-align: center;
         margin-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
         padding-top: 17px;
         border-top: 1px solid #000;
     }
@@ -1441,7 +1591,7 @@
     }
     
     footer {
-        background-color: var(--cor6);
+        background-color: var(--cor3);
         height: max-content;
         border-radius: 0px 158px 0px 0px;
     }
@@ -1462,7 +1612,6 @@
     .iconemail, .email {
         display: inline-block;
     }
-}
 
 @media screen and (min-width: 992px) and (max-width: 1220px) {
     #menu-mobile {
@@ -1475,9 +1624,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right center;
-        max-width: 100vw;
-        height: 600px;
-        padding-left: 80px;
+        width: 93vw;
+        height: 500px;
+        padding-left: 10vw;
     }
 
     div.maintext {
@@ -1486,23 +1635,24 @@
         align-items: flex-start;
         justify-content: flex-start;
         padding-top: 40px;
+        margin-top: 20px;
         width: 550px;
     }
 
-    h1 {
+    /*h1 {
         color: var(--cor2);
         font-family:   var(--fonte2);
         font-weight: 400;
         font-size: 5.5vw; 
         font-style: normal;
         line-height: normal;
-    }
+    }*/
 
     #prof {
         margin-top: 10px;
     }
 
-    .profissao {
+    /*.profissao {
         width: 32vw;
         height: 45px;
         font-family: var(--fonte1);
@@ -1511,25 +1661,36 @@
         font-style: normal;
         line-height: normal;
         color: var(--cor3);
+    }*/
+
+    .profissao {
+        width: 32vw;
+        height: 45px;
+        font-family: var(--fonte1);
+        font-weight: 400;
+        font-size:  20px;
+        font-style: normal;
+        line-height: 30.24px;
+        color: var(--cor5);
     }
 
     .registro {
-        width: 18vw; 
+        width: 230px; 
         margin-top: 10px;
         padding-top: 10px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
-        font-size: 1.2vw;   
+        font-size: 1.3vw;   
         font-weight: 400;
         line-height: 21.78px;
         color: var(--cor5);
     }
 
     .proposito {
-        margin-top: 12vh;
-        width: 35vw;
+        margin-top: 10vh;
+        width: 36vw;
         font-family: var(--fonte1);
-        font-size: 1.3vw;    
+        font-size: 1.4vw;    
         font-weight: 400;
         font-style: normal;
         line-height: normal;
@@ -1541,7 +1702,7 @@
     }
 
     .agendeconsulta1 {
-        width:  30vw; 
+        width:  35vw; 
         height: 40px;
         padding: 10px;
         border-radius: 10px;
@@ -1550,8 +1711,8 @@
     }
 
     .agendeconsulta1:hover {
-        background-color: #e7c9a2;
-        transition: background-color 0.3s ease-out;
+        background-color: #911d40d2;
+        transition: background-color 0.2s ease-out;
     }
 
     a > button {
@@ -1566,7 +1727,7 @@
     }
 
     .agendeconsulta2:hover {
-        background-color: #e7c9a2;
+        background-color: #911d40d2;
         transition: background-color 0.3s ease-out;
     }
 
@@ -1611,7 +1772,7 @@
         font-weight: 400;
         font-size: 2.5vw;
         line-height: 35px;
-        color: var(--cor3);
+        color: var(--cor6);
         text-align: left;
         margin-top: 20px;
         margin-bottom: 15px;
@@ -1638,7 +1799,7 @@
         text-decoration: none;
     }
 
-    #fotofinalfull {
+    video {
         display: block;
         width: 270px;
         height: 317px;
@@ -1652,11 +1813,11 @@
     aside#localizacao {
         display: block;
         position: relative;
-        width: 26vw;
+        width: 28vw;
         height: 230px;
         background: #fff;
         border-radius: 20px;
-        margin-left: 700px;
+        margin-left: 65vw;
         margin-top: -270px;
         margin-bottom: 60px;
     }
@@ -1678,10 +1839,12 @@
         background-image: url(../imagens/perfil_original.webp);
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center right;
-        max-width: 100vw;
-        height: 600px;
+        background-position: right center;
+        margin-top: 40px;
+        width: 95vw;
+        height: 500px;
         padding-left: 120px;
+        /*padding-top: 40px;*/
     }
 
     #prof {
@@ -1689,26 +1852,31 @@
     }
 
     .profissao {
-        width: 400px;
+        width: 491px;
         height: 45px;
         font-family: var(--fonte1);
-        font-weight: 600;
-        font-size:  20px;
+        font-weight: 400;
+        font-size:  24px;
         font-style: normal;
-        line-height: normal;
-        color: var(--cor3);
+        line-height: 30.24px;
+        color: var(--cor5);
     }
 
     .registro {
-        width: 220px; 
-        margin-top: 10px;
-        padding-top: 10px;
+        width: 264px; 
+        margin-top: 20px;
+        padding-top: 7px;
         border-top: 0.1em solid #000;
         font-family: var(--fonte4);
-        font-size: 15px;   
+        font-size: 18px;   
         font-weight: 400;
         line-height: 21.78px;
         color: var(--cor5);
+    }
+
+    .subtitulo1 {
+        text-align: right;
+        margin-right: 12vw;
     }
 
     /*Estilos para sessão procedimentos*/
@@ -1730,6 +1898,18 @@
     .swiper-button-next, .swiper-button-prev {
         color: var(--cor5);
     }
+
+    aside#localizacao {
+        display: block;
+        position: relative;
+        width: 28vw;
+        height: 230px;
+        background: #fff;
+        border-radius: 20px;
+        margin-left: 65vw;
+        margin-top: -270px;
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (min-width: 2000px) {
@@ -1739,7 +1919,7 @@
         background-size: contain;
         background-position: center right;
         max-width: 100vw;
-        height: 700px;
+        height: 600px;
         padding-left: 120px;
     }
 
@@ -1765,7 +1945,7 @@
         font-size:  1.2vw;
         font-style: normal;
         line-height: normal;
-        color: var(--cor3);
+        color: var(--cor5);
     }
 
     .registro {
@@ -1905,7 +2085,7 @@
         color: var(--cor5);
     }
 
-    div.caixacomentarios {
+    #caixacomentarios1, #caixacomentarios2, #caixacomentarios3, #caixacomentarios4, #caixacomentarios5, #caixacomentarios6 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1925,7 +2105,7 @@
         font-size: 25px;
     }
 
-    #fotofinalfull {
+    video {
         display: block;
         width: 270px;
         height: 317px;
@@ -1934,4 +2114,17 @@
         left: 22vw;
         top: -40px;
     }
+
+    aside#localizacao {
+        display: block;
+        position: relative;
+        width: 28vw;
+        height: 230px;
+        background: #fff;
+        border-radius: 20px;
+        margin-left: 65vw;
+        margin-top: -270px;
+        margin-bottom: 60px;
+    }
+}
 }

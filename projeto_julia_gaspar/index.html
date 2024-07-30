@@ -6,7 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Landing Page sobre trabalhos e serviços oferecidos pela Dra Júlia Gaspar, médica otorrinolaringologista e cirurgiã plástica">
     <meta name="author" content="Paulo Renan Teixeira Araújo">
-    <meta name="robots" content="index, follow">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11128541376"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11128541376', {'allow_enhanced_conversions':true});
+    </script>
+    
+    <!-- Event snippet for Contato Whats Julia new Landing page conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button.-->
+    <script> 
+        function gtag_report_conversion(url) { 
+            const callback = function () { 
+                if (typeof(url) != 'undefined') { 
+                    console.log() // window.location = url; 
+                } 
+            }; 
+            gtag('event', 'conversion', { 
+                'send_to': 'AW-11128541376/SOS4CMqW8YcZEMChwLop', 'event_callback': callback 
+            });
+            return false;
+        } 
+    </script>
+
+    
+    <!--Links para Javascript-->
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
 
     <!--Links para estilos CSS-->
     <link rel="stylesheet" href="estilos/style.css">
@@ -24,18 +52,19 @@
 </head>
 <body>
     <header>
-        <img id = logo src="imagens/logo.webp" alt="logo da empresa">
-        <img id = logo-cut src="imagens/logo_cut.webp" alt="logo da empresa">
-
+        <picture>
+            <source media="(max-width: 991px)" srcset=".//imagens/logomenor.webp" type="image/webp">
+            <img id = logo src="imagens/logo.webp" alt="logo da empresa">
+        </picture>        
         <!--Menu versão telas maiores-->
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
             menu
         </span>
         <nav id="menu">
             <a class="menu-item" href="#sessaoprincipal">Home</a>
-            <a class="menu-item" href="#sessaoespecialidades">Procedimentos</a>
-            <a class="menu-item" href="#sessaofeedbacks">Feedbacks</a>
-            <a class="menu-item" href="#sessaofinal">Agendamentos</a>
+            <span id="antepenultimomenuitem"><a class="menu-item" href="#sessaoespecialidades">Procedimentos</a></span>
+            <span id="penultimomenuitem"><a class="menu-item" href="#sessaofeedbacks">Feedbacks</a></span>
+            <span id="ultimomenuitem" href="https://wa.me/5511945918631" target="_blank"><a class="menu-item" href="#sessaofinal">Agende a sua consulta</a></span>
         </nav>
     </header>
 
@@ -44,7 +73,7 @@
         <a class="menu-mobile-item" href="#sessaoprincipal">Home</a>
         <a class="menu-mobile-item" href="#sessaoespecialidades">Procedimentos</a>
         <a class="menu-mobile-item" href="#sessaofeedbacks">Feedbacks</a>
-        <a class="menu-mobile-item" href="#sessaofinal">Agendamentos</a>
+        <a class="menu-mobile-item" href="#sessaofinal">Agende a sua consulta</a>
     </nav>
 
     <main>
@@ -52,14 +81,18 @@
         <!--Primeira Sessão-->
         <section id="sessaoprincipal">
             <div class="maintext">
-                <h1>Júlia Gaspar</h1>
+                <!--<h1>Júlia Gaspar</h1>  Alternativa anterior antes da reforma do site-->
+                <picture>
+                    <source media="(max-width: 991px)" srcset=".//imagens/logo.webp" type="image/webp">
+                    <img src=".//imagens/logomaior.webp" alt="">
+                </picture>
                 <div id="prof">
-                    <p class="profissao">Médica Otorrinolaringologista e cirurgiã plástica facial.</p>
+                    <p class="profissao">Médica Otorrinolaringologista e Cirurgiã Plástica Facial</p>
                 </div>
                 <p class="registro">CRM-SP: 212523 RQE: 119542</p>
                 <p class="proposito">Meu propósito é ajudar você a ter mais saúde, qualidade de vida e autoestima!</p>
-                <div class="botao">
-                    <a href="https://wa.me/5511945918631" target="_blank"><button class="agendeconsulta1">Agende a sua consulta</button></a>
+                <div class="botao" class= "btnConversao">
+                    <a class= "btnConversao" href="https://wa.me/5511945918631" target="_blank"><button class="agendeconsulta1">Agende a sua consulta</button></a>
                 </div>
             </div>
         </section>
@@ -67,7 +100,9 @@
         <!--Segunda Sessão-->
         <section id="sessaoespecialidades" >
             <h2 class="subtitulo1">Procedimentos</h2>
-            <p class="postitulo">Conheça os procedimentos e cirurgias que realizo.</p>
+            <p class="postitulo">Conheça os procedimentos e cirurgias que realizo</p>
+            <p class="postitulodesktop1">Conheça os principais procedimentos e cirurgias que realizo para te ajudar a ter mais saúde e autoestima</p>
+            <div id="linha1"></div>
             <div class="slide-mobile">
 
                 <!--Cards para mobile-->
@@ -203,6 +238,8 @@
         <section id="sessaofeedbacks">
             <h2 class="subtitulo2">Feedbacks</h2>
             <p class="postitulo">Veja o que os meus pacientes estão falando!</p>
+            <p class="postitulodesktop2">Conheça as histórias reais dos meus pacientes e veja o que eles estão falando sobre os tratamentos</p>
+            <div id="linha2"></div>
             <div id="comments">
                 <div class="caixacomentarios visivel">
                     <div class="aspas">
@@ -253,26 +290,85 @@
                     <p class="cliente"><span class="trav">–</span> Carla R.</p>
                 </div>
             </div>
+
+            
+            <!--Comentários para versão desktop-->
+            <div id="commentsdesktop">
+                <div id="caixacomentarios1">
+                    <div class="aspas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                    </div>
+                    <p class="comentarios">Indescritível ter um sonho realizado pelas mãos da Dra. Júlia Gaspar! Desde o primeiro atendimento até o pós somente elogios para essas mãos de fada!</p>
+                    <p class="cliente"> <span class="trav">–</span> Helen Simões</p>
+                </div>
+                <div id="caixacomentarios2">
+                    <div class="aspas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                    </div>
+                    <p class="comentarios">A Dra Júlia é fantástica! Operei tanto funcional quanto estética com ela e foi um sonho! As consultas de acompanhamento foram muito boas, indico de olhos fechados!</p>
+                    <p class="cliente"><span class="trav">–</span> Maria Eduarda</p>
+                </div>
+                <div id="caixacomentarios3">
+                    <div class="aspas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                    </div>
+                    <p class="comentarios">Super recomendo! Realizei alguns procedimentos e minha qualidade de vida foi de 0 a 100 em algumas horas. Atendimento excelente, profissional super qualificada!</p>
+                    <p class="cliente"><span class="trav">–</span> Catia Aparecida</p>
+                </div>
+                <div id="caixacomentarios4">
+                    <div class="aspas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                    </div>
+                    <p class="comentarios">Dra de alta excelência, delicada e atenciosa. Profissional 100% qualificada e competente. Amei o resultado!</p>
+                    <p class="cliente"><span class="trav">–</span> Taisa Bucco</p>
+                </div>
+                <div id="caixacomentarios5">
+                    <div class="aspas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                    </div>
+                    <p class="comentarios">A cirurgia foi muito tranquila e muito bem cuidada. A médica super atenciosa com meu filho, explicando cada detalhe e tirando todas as dúvidas. Estou muito feliz por ter escolhido uma grande profissional.</p>
+                    <p class="cliente"><span class="trav">–</span> Monica e Vitor</p>
+                </div>
+                <div id="caixacomentarios6">
+                    <div class="aspas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                        <img src="imagens/vector.webp" alt="Aspas duplas">
+                    </div>
+                    <p class="comentarios">Só tenho elogios para a Dra Júlia, profissional muito atenciosa e dedicada aos pacientes. Escutou de verdade todas as minhas queixas e sempre tirou todas as dúvidas desde a primeira consulta, além de ter feito um trabalho incrível na minha cirurgia.</p>
+                    <p class="cliente"><span class="trav">–</span> Carla R.</p>
+                </div>
+            </div>
+            <p id="acompanhe"><a href= "https://www.instagram.com/dra.juliagasparsantos/" target="_blank">Acompanhe mais histórias no meu instagram<br>@drajuliagaspar</a></p>
         </section>
 
         <!--Quarta Sessão-->
         <section id="sessaofinal">
-            <img id="fotofinal" src="imagens/foto_mobile.webp" alt="foto de Dra Júlia Gaspar">
-            <img id= "fotofinalfull" src="imagens/foto_screen.webp" alt="foto de Dra Júlia Gaspar">
+            <video autoplay loop muted poster="imagens/poster.webp" controls>
+                <source src="midia/videojg.mp4" type="video/mp4">
+                <source src="midia/videojg.webm" type="video/webm">
+                <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+            </video>
+            <!--<img id="fotofinal" src="imagens/foto_mobile.webp" alt="foto de Dra Júlia Gaspar">
+            <img id= "fotofinalfull" src="imagens/foto_screen.webp" alt="foto de Dra Júlia Gaspar">-->
             <div class="text-sessaofinal">
-                <h3>Meu compromisso é com a sua autoestima e qualidade de vida!</h3>
+                <h3>Meu compromisso é com a sua qualidade de vida!</h3>
                     <p id="paragfinal">Agende a sua consulta e realize o sonho de ter saúde e qualidade de vida, alcançando os seus sonhos e objetivos estéticos!</p>
-                <a href="https://wa.me/5511945918631" target="_blank"><button class="agendeconsulta2">Agende a sua consulta</button></a>
+                <a class= "btnConversao" href="https://wa.me/5511945918631" target="_blank"><button class="agendeconsulta2">Agende a sua consulta</button></a>
                 <span id="logo-whatsapp-instagram">
                     <a href="https://www.instagram.com/dra.juliagasparsantos/" target="_blank"><img id="logo-instagram" src="imagens/instagram.webp" alt="logo instagram com hiperlink"></a>
-                    <a href="https://wa.me/5511945918631" target="_blank"><img id="logo-whatsapp" src="imagens/whatsapp.webp" alt="logo whatsapp com hiperlink"></a>
+                    <a class= "btnConversao" href="https://wa.me/5511945918631" target="_blank"><img id="logo-whatsapp" src="imagens/whatsapp.webp" alt="logo whatsapp com hiperlink"></a>
                 </span>
             </div>
 
             <div class="text-sessaofinal2">
                 <h3>Meu compromisso é com a sua autoestima e qualidade de vida!</h3>
                     <p id="paragfinal2">Agende a sua consulta e realize o sonho de ter saúde e qualidade de vida, alcançando os seus sonhos e objetivos estéticos!</p>
-                <a href="https://wa.me/5511945918631" target="_blank"><button class="agendeconsulta2">Agende a sua consulta</button></a>
+                <a class= "btnConversao" href="https://wa.me/5511945918631" target="_blank"><button class="agendeconsulta2">Agende a sua consulta</button></a>
             </div>
         </section>
     </main>
@@ -281,15 +377,14 @@
     <div id="background-footer">
         <footer>
             <h4>Júlia Gaspar</h4>
-            <p id="apresentacaomobile">Sou médica otorrinolaringologista, mestre em rinologia, pós-graduada em rinoplastia, e com fellowship em cirurgia plástica facial.</p>
+            <!--<p id="apresentacaomobile">Sou médica otorrinolaringologista, mestre em rinologia, pós-graduada em rinoplastia, e com fellowship em cirurgia plástica facial.</p>-->
 
             <!--Apresentação para telas maiores-->
             <ul id="apresentacao">
-                <li>Médica otorrinolaringologista com residência médica realizada na Universidade Federal do Estado do Rio de Janeiro (UNIRIO).</li>
-                <li>Mestrado pela Universidade Federal de São Paulo (UNIFESP).</li>
-                <li>Fellowship no Instituto Paranaense de Otorrinolaringologia (IPO).</li>
+                <li>Médica otorrinolaringologista com residência médica realizada na Universidade Federal do Estado do Rio de Janeiro (UNIRIO);</li>
+                <li>Mestrado pela Universidade Federal de São Paulo (UNIFESP);</li>
+                <li>Fellowship em Plástica Facial no Hospital IPO;</li>
                 <li>Pós-graduação em Rinoplastia no Instituto Jurado.</li>
-                <li>Fellowship em Cirurgia Plástica da Face com Dr. Raphael Gomes.</li>
             </ul>
                 <div style="padding: 0 0 5px 12px;">
                     <a href="tel:11945918631" target="_blank">
@@ -310,7 +405,7 @@
                 </a>
             </div>
             <div id="logo-wa-in">
-                <a href="https://wa.me/5511945918631" target="_blank"><img id="wa" src="imagens/wa.webp" alt="logo whatsapp com hiperlink"></a>
+                <a class= "btnConversao" href="https://wa.me/5511945918631" target="_blank"><img id="wa" src="imagens/wa.webp" alt="logo whatsapp com hiperlink"></a>
                 <a href="https://www.instagram.com/dra.juliagasparsantos/" target="_blank"><img id="in" src="imagens/in.webp" alt="logo instagram com hiperlink"></a>
             </div>
             <a href="https://www.google.com/maps?q=R.+Mato+Grosso,+306+-+cj.1406+-+Higienópolis,+São+Paulo+-+SP" target="_blank">
@@ -332,8 +427,14 @@
         </footer>
     </div>
 
-    <!--Links para Javascript-->
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script>
+        let botoes = document.getElementsByClassName("btnConversao");
+
+        for (let i = 0; i < botoes.length; i++) {
+            botoes[i].addEventListener("click", function() {
+                gtag_report_conversion('https://wa.me/5511945918631');
+            });
+        }
+    </script>    
 </body>
 </html>

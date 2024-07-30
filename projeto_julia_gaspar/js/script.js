@@ -12,6 +12,7 @@ function clickMenu() {
 
 
 /*Interações com o menu inicial na versão para telas maiores. Adição de rolagem automática até uma sessão específica*/ 
+
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
         if (section) {
