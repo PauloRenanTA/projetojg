@@ -714,7 +714,7 @@
         left: 0;
         opacity: 0;
         transition: opacity 1s ease-in-out;
-        height: 47vh;
+        height: 80vh;
         box-shadow: 0.5px 3px 1px 3px rgba(0, 0, 0, 0.151);
         border-radius: 20px;
         margin-right: 90px;
