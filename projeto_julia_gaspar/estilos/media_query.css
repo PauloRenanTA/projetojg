@@ -221,7 +221,7 @@
 
     #sessaofeedbacks {
         position: relative;
-        margin-bottom: 500px;
+        margin-bottom: 450px;
     }
 
     #commentsdesktop {
@@ -234,7 +234,7 @@
         left: 0;
         opacity: 0;
         transition: opacity 1s ease-in-out;
-        height: 45vh;
+        height: 42vh;
         box-shadow: 0.5px 3px 1px 3px rgba(0, 0, 0, 0.055);
         border-radius: 20px;
         margin-right: 30px;
