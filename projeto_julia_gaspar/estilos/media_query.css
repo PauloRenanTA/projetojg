@@ -93,6 +93,11 @@
         line-height: 44px;
     }*/
 
+    #logomaintelasmenores {
+        width: 252px;
+        margin-left: 10px;
+    }
+
     .profissao {
         width: 70vw;
         height: 45px;
@@ -521,6 +526,11 @@
         font-size: 8.5vw;
         line-height: 44px;
     }*/
+
+    #logomaintelasmenores {
+        width: 252px;
+        margin-left: 10px;
+    }
     
     p {
         font-family: var(--fonte1);
@@ -976,8 +986,8 @@
         padding-top: 1vh;
         padding-left: 64px;
         display: block;
-        width: 252px;
-        height: 45px;
+        width: 250px;
+        height: 40px;
     }
 
     #burguer {
