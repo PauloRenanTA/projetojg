@@ -61,8 +61,8 @@
 
     #logo {
         display: block;
-        /*width: 60px;
-        height: 60px;*/
+        width: 95px;
+        height: 18px;
     }
 
     #menu {
@@ -477,9 +477,9 @@
 
     #logo {
         display: block;
-        margin-left: 8vw;
-        /*width: 60px;
-        height: 60px;*/
+        width: 95px;
+        height: 18px;
+        margin-left: 70px;
     }
 
     #menu {
@@ -974,7 +974,10 @@
     #logo {
         display: block;
         padding-top: 1vh;
-        padding-left: 64px; 
+        padding-left: 64px;
+        display: block;
+        width: 252px;
+        height: 45px;
     }
 
     #burguer {
